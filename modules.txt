@@ -5,10 +5,10 @@ Latch
 Latch enable 
 Register A/B
 
-Shifter 
-PC  
-MUX 
-KMUX
+Shifter     OK
+PC          
+MUX         OK
+KMUX        OK
 DEMUX 
 
 -----------LOGICA INTERNA-------------
