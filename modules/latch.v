@@ -1,11 +1,9 @@
 module latch16
-    (   input en,
-	    input wire [15:0] D,
+    (   input wire [15:0] D,
 		output reg [15:0] Q);
 
-	always @ (en or D) 
+	always @ (D) 
         begin
-            if(en)
-                Q <= D;
+            Q <= D;
 	    end
 endmodule
