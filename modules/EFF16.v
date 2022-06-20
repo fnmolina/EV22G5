@@ -1,0 +1,12 @@
+module EFF16 
+    (   input en,
+        input clk,
+        input [15:0] D,
+        output reg [15:0] Q);
+    
+	always @ (posedge clk) 
+        begin
+            if(en)
+                Q <= D;
+        end
+endmodule
