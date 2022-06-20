@@ -5,8 +5,8 @@ Latch
 Latch enable 
 Register A/B
 
-Shifter 
-PC  
+Shifter     OK
+PC          
 MUX 
 KMUX
 DEMUX 
