@@ -1,0 +1,33 @@
+-----------COMPONENTES--------------
+Flip flop 
+Flip flop enable 16 y 32
+Latch
+Latch enable 
+Register A/B
+
+Shifter 
+PC  
+MUX 
+KMUX
+DEMUX 
+
+-----------LOGICA INTERNA-------------
+ALU 
+UC1
+UC2
+Program ROM 
+
+
+-----------MODULOS QUARTUS------------
+DATA 
+INSTRUCTIONS 
+PLL
+
+
+A determinar:
+- cantidad de bits para instrucciones 
+- cómo organizar el set de instrucciones. Expanding opcodes?
+- clocks
+- cuando usar ff y cuando latches 
+- casos de colisiones para UC1
+- cómo son las señales de hold y enable 
