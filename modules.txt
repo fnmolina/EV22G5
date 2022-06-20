@@ -16,6 +16,7 @@ ALU
 UC1
 UC2
 Program ROM 
+CY Block
 
 
 -----------MODULOS QUARTUS------------
