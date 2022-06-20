@@ -7,8 +7,8 @@ Register A/B
 
 Shifter     OK
 PC          
-MUX 
-KMUX
+MUX         OK
+KMUX        OK
 DEMUX 
 
 -----------LOGICA INTERNA-------------
