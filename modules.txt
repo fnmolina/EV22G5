@@ -1,32 +1,41 @@
 -----------COMPONENTES--------------
-Flip flop 
-Flip flop enable 16 y 32
-Latch
-Latch enable 
-Register A/B
+Flip flop 			OK
+Flip flop enable 16 y 32	OK
+Latch		OK	
+Latch enable	OK 
+Register A/B	OK
 
-Shifter     OK
-PC          
+Shifter     OK          
 MUX         OK
 KMUX        OK
 DEMUX 
 
 -----------LOGICA INTERNA-------------
-ALU 
+ALU	 
 UC1
-UC2
-Program ROM 
-CY Block
-
+UC2	
+MIR	FACU
+CY Block (puede ir dentro del PC)
+PC	CARLOS 
 
 -----------MODULOS QUARTUS------------
-DATA 
-INSTRUCTIONS 
-PLL
+DATA 	FRAN 	
+INSTRUCTIONS	FRAN  
+PLL	
+
+-----------COMPILADOR------------
+MOV 28
+
+-----------FUNCIONALIDADES ADICIONALES------------
+-Operaciones adicionales Instrucciones/ALU
+-Expanding opcodes 
+-Memoria Cache 
+-Operaciones de punto flotante? ALU floating point 
+-Modos de privilegio => LOGIN/LOGOUT validacion de usuario con contraseña guardada en memoria 
 
 
 A determinar:
-- cantidad de bits para instrucciones 
+- cantidad de bits para instrucciones ----
 - cómo organizar el set de instrucciones. Expanding opcodes?
 - clocks
 - cuando usar ff y cuando latches 

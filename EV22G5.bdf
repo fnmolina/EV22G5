@@ -21,7 +21,7 @@ https://fpgasoftware.intel.com/eula.
 */
 (header "graphic" (version "1.4"))
 (symbol
-	(rect 376 208 528 320)
+	(rect 376 200 528 312)
 	(text "reg8" (rect 5 0 26 12)(font "Arial" ))
 	(text "inst" (rect 8 96 25 108)(font "Arial" ))
 	(port
