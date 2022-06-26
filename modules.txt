@@ -15,8 +15,8 @@ ALU
 UC1
 UC2	
 MIR	FACU
-CY Block (puede ir dentro del PC)
-PC	CARLOS 
+CY Block (puede ir dentro del ALU)
+PC	CARLOS      OK
 
 -----------MODULOS QUARTUS------------
 DATA 	FRAN 	
