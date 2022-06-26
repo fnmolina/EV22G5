@@ -1,7 +1,7 @@
 module RB 
 	(	input wire clk, 
 		//Señales de control de microinstruccion 
-		input wire [1:0] MC;	//bit0 MW, bit1 MR
+		input wire [1:0] MC,	//bit0 MW, bit1 MR
 		input wire [5:0] WRC, 
 		input wire [4:0] busA, 
 		input wire [5:0] busB, 

@@ -11,20 +11,20 @@ KMUX        OK
 DEMUX 
 
 -----------LOGICA INTERNA-------------
-ALU	 
-UC1
+ALU	CARLOS
+UC1	FACU	
 UC2	
-MIR	FACU
+MIR	FACU	OK
 CY Block (puede ir dentro del ALU)
 PC	CARLOS      OK
 
 -----------MODULOS QUARTUS------------
 DATA 	FRAN 	
 INSTRUCTIONS	FRAN  
-PLL	
+PLL		FRAN
 
 -----------COMPILADOR------------
-MOV 28
+FRAN
 
 -----------FUNCIONALIDADES ADICIONALES------------
 -Operaciones adicionales Instrucciones/ALU
