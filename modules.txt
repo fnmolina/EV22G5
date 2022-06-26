@@ -13,7 +13,7 @@ DEMUX
 -----------LOGICA INTERNA-------------
 ALU	CARLOS
 UC1	FACU	
-UC2	
+UC2	(considerado en RB)
 MIR	FACU	OK
 CY Block (puede ir dentro del ALU)
 PC	CARLOS      OK
