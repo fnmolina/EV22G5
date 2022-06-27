@@ -1,4 +1,4 @@
-module MIR }
+module MIR 
     (   input wire  clk,
         input [23:0] IR, //Instruction
         output reg [32:0] MIR); //Microinstruction 
