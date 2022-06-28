@@ -17,7 +17,7 @@ module pc (
     end
     
     always @(posedge clk) begin
-        if (en) begin
+        if (enable) begin
             if (start) begin
                 temp = IR >> 12;
                 case (temp)
