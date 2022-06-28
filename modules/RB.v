@@ -2,19 +2,19 @@ module RB
 	(	input wire clk, 
 		//Señales de control de microinstruccion 
 		input wire [1:0] MC,	//bit0 MW, bit1 MR
-		input wire [5:0] WRC, 
+		input wire [5:0] busC, 
 		input wire [4:0] busA, 
 		input wire [5:0] busB, 
 
 		//Input data Bus C
-		input wire [15:0] busC,
+		input wire [15:0] dataC,
 		
 		//Input data memory
 		input wire [15:0] Mdata,
 
 		//Operands  
 		output reg [15:0] A, 
-		output reg [15:0] B
+		output reg [15:0] B,
 		
 		//Output memory data		
 		output reg [15:0] WRdata);
@@ -35,19 +35,26 @@ module RB
 	//Block 2
 	always @ (posedge clk) 
 		begin 
-			if(MC[0])
+			if(MC[0])		//memory write 
 				WRdata <= Register[WR];
-			else if(MC[0])
+			else if(MC[1])		//memory read
 				Register[WR] <= Mdata;
 			else
-				Register[WRC] <= busC;
+				if(busC <= WR)
+					Register[busC] <= dataC;
 		end
 
 	//Block 3
 	//Esto no me parece del todo bien. Si A o B no cambian podria no guardar un dato actualizado por C en el clk anterior?
 	always @ (busA or busB) 
 		begin 
-			A <= R[busA];
-			B <= R[busB];
+			if(busA <= WR)
+				begin
+				if(busB <= WR)
+					begin
+					A <= Register[busA];
+					B <= Register[busB];
+					end
+				end
 		end
 endmodule
