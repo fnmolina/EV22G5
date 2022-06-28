@@ -90,18 +90,22 @@ set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VERILOG_FILE modules/shifter.v
-set_global_assignment -name VERILOG_FILE modules/RB.v
-set_global_assignment -name VERILOG_FILE modules/pc.v
-set_global_assignment -name VERILOG_FILE modules/mux_k.v
-set_global_assignment -name VERILOG_FILE modules/mux.v
-set_global_assignment -name VERILOG_FILE modules/latch.v
-set_global_assignment -name VERILOG_FILE modules/FF32.v
-set_global_assignment -name VERILOG_FILE modules/elatch.v
-set_global_assignment -name VERILOG_FILE modules/EFF32.v
-set_global_assignment -name VERILOG_FILE modules/EFF16.v
-set_global_assignment -name VERILOG_FILE reg.v
-set_global_assignment -name BDF_FILE EV22G5.bdf
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VERILOG_FILE modules/UCtest.v
+set_global_assignment -name VERILOG_FILE modules/EFF24.v
+set_global_assignment -name VERILOG_FILE modules/pc.v
+set_global_assignment -name BDF_FILE EV22G5.bdf
+set_global_assignment -name QIP_FILE PLL.qip
+set_global_assignment -name HEX_FILE PROGRAM.hex
+set_global_assignment -name MIF_FILE PROGRAM.mif
+set_global_assignment -name QIP_FILE PROGRAM.qip
+set_global_assignment -name QIP_FILE DATA.qip
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

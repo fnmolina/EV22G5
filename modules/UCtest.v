@@ -1,0 +1,13 @@
+module UCtest
+    (   input wire      clk,
+        output reg      hold); 
+
+
+//In case the instruction in execute stage writes over a register, analize conflicts. 
+always@ (negedge clk) 
+    begin    
+        begin
+            hold <= 1;
+        end
+    end 
+endmodule 

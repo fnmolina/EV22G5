@@ -22,14 +22,14 @@ module MIR
 
 	initial begin       
 
-		ROM0[0] = 33'b0000 00000 000000 100011 1000000 00000; //JMP X
-		ROM0[1] = 33'b0000 00000 000000 100011 1000001 00000; //JZE X
-		ROM0[2] = 33'b0000 00000 000000 100011 1000001 00000; //JNE X
-		ROM0[3] = 32'b0000 00000 000000 100011 1010000 00000; //JCY X
-		ROM0[4] = 33'b0000 00000 000000 100011 1000000 00000; //RET 
-		ROM0[5] = 33'b0000 00000 000000 100011 1000000 00000; //BSR S
-		ROM0[6] = 33'b0000 00000 000001 100011 0000001 00000; //MOM Y, W
-        ROM0[7] = 33'b0000 00000 000010 100011 0000010 00000; //MOM W, Y
+		ROM0[0] = 33'b000000000000000100011100000000000; //JMP X
+		ROM0[1] = 33'b000000000000000100011100000100000; //JZE X
+		ROM0[2] = 33'b000000000000000100011100000100000; //JNE X
+		ROM0[3] = 33'b000000000000000100011101000000000; //JCY X
+		ROM0[4] = 33'b000000000000000100011100000000000; //RET 
+		ROM0[5] = 33'b000000000000000100011100000000000; //BSR S
+		ROM0[6] = 33'b000000000000001100011000000100000; //MOM Y, W
+        ROM0[7] = 33'b000000000000010100011000001000000; //MOM W, Y
 
         ROM1[1] = 33'b100010000001001010001000100000011; //MOK W,K
 		ROM1[2] = 33'b100010000001000011001000100000011; //ANK W,K
@@ -80,34 +80,35 @@ module MIR
 	always@ (negedge clk) 
         begin
 		aux = IR;
-        group = IR & 16'hf80000];
+        group = IR & 24'hf80000];
         case(group)
 			ROM0index: 
 			begin
-                index = (aux & 16'h0ff000) >> 12;     //get instruction index 
-                MIR <= ROM0[index]; 
+				MIR = (aux & 24'h000fff);            //get memory/program address
+                index = (aux & 24'h0ff000) >> 12;     //get instruction index 
+                MIR <= MIR | ROM0[index]; 
 			end
 			ROM1index:
 			begin
-                index = (aux & 16'h0f0000) >> 16;     //get instruction index 
+                index = (aux & 24'h0f0000) >> 16;     //get instruction index 
                 MIR <= ROM1[index]; 
 			end
 			ROM2index:
 			begin
-                MIR = (aux & 16'h00001f);            //get register index A bus
-                index = (aux & 16'h0fffe0) >> 5;     //get instruction index 
+                MIR = (aux & 24'h00001f);            //get register index A bus
+                index = (aux & 24'h0fffe0) >> 5;     //get instruction index 
                 MIR <= MIR | ROM2[index];  
 			end
 			ROM3index: 
 			begin
-                MIR = (aux & 16'h00001f);               //get register index A bus 
-                MIR = MIR | ((aux & 16'h0003e0) << 6);  //get register index C bus 
-                index = (aux & 16'h0ffc00) >> 10;        //get instruction index 
+                MIR = (aux & 24'h00001f);               //get register index A bus 
+                MIR = MIR | ((aux & 24'h0003e0) << 6);  //get register index C bus 
+                index = (aux & 24'h0ffc00) >> 10;        //get instruction index 
                 MIR <= MIR | ROM3[index];  
 			end
 			ROM4index:
 			begin
-                index = (aux & 16'h07ffff);        //get instruction index 
+                index = (aux & 24'h07ffff);        //get instruction index 
                 MIR <= MIR | ROM3[index];  
 			end
 		endcase
