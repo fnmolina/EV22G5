@@ -2,84 +2,120 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'EFF32:OperandStage|Q[22]'
-Slack : -4.194
-TNS   : -124.242
-
 Type  : Slow 1200mV 85C Model Setup 'clk0'
-Slack : -4.061
-TNS   : -1565.292
+Slack : -46.464
+TNS   : -24524.935
+
+Type  : Slow 1200mV 85C Model Setup 'EFF32:OperandStage|Q[18]'
+Slack : -3.676
+TNS   : -53.338
+
+Type  : Slow 1200mV 85C Model Setup 'EFF24:InstReg|Q[22]'
+Slack : -0.604
+TNS   : -3.415
+
+Type  : Slow 1200mV 85C Model Hold 'EFF24:InstReg|Q[22]'
+Slack : -0.125
+TNS   : -0.374
 
 Type  : Slow 1200mV 85C Model Hold 'clk0'
-Slack : 0.344
+Slack : 0.260
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'EFF32:OperandStage|Q[22]'
-Slack : 0.894
+Type  : Slow 1200mV 85C Model Hold 'EFF32:OperandStage|Q[18]'
+Slack : 0.419
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk0'
 Slack : -3.000
-TNS   : -648.088
+TNS   : -786.048
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'EFF32:OperandStage|Q[22]'
-Slack : 0.440
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'EFF32:OperandStage|Q[18]'
+Slack : 0.377
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'EFF24:InstReg|Q[22]'
+Slack : 0.410
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_input'
 Slack : 4.835
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'EFF32:OperandStage|Q[22]'
-Slack : -3.691
-TNS   : -109.455
-
 Type  : Slow 1200mV 0C Model Setup 'clk0'
-Slack : -3.570
-TNS   : -1357.245
+Slack : -41.396
+TNS   : -21855.730
+
+Type  : Slow 1200mV 0C Model Setup 'EFF32:OperandStage|Q[18]'
+Slack : -3.171
+TNS   : -46.219
+
+Type  : Slow 1200mV 0C Model Setup 'EFF24:InstReg|Q[22]'
+Slack : -0.541
+TNS   : -3.041
+
+Type  : Slow 1200mV 0C Model Hold 'EFF24:InstReg|Q[22]'
+Slack : -0.011
+TNS   : -0.032
 
 Type  : Slow 1200mV 0C Model Hold 'clk0'
-Slack : 0.299
+Slack : 0.253
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'EFF32:OperandStage|Q[22]'
-Slack : 0.837
+Type  : Slow 1200mV 0C Model Hold 'EFF32:OperandStage|Q[18]'
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk0'
 Slack : -3.000
-TNS   : -648.088
+TNS   : -786.048
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'EFF32:OperandStage|Q[22]'
-Slack : 0.469
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'EFF32:OperandStage|Q[18]'
+Slack : 0.453
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'EFF24:InstReg|Q[22]'
+Slack : 0.472
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_input'
 Slack : 4.818
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'EFF32:OperandStage|Q[22]'
-Slack : -1.980
-TNS   : -57.690
-
 Type  : Fast 1200mV 0C Model Setup 'clk0'
-Slack : -1.879
-TNS   : -648.689
+Slack : -25.889
+TNS   : -13594.995
+
+Type  : Fast 1200mV 0C Model Setup 'EFF32:OperandStage|Q[18]'
+Slack : -1.711
+TNS   : -24.361
+
+Type  : Fast 1200mV 0C Model Setup 'EFF24:InstReg|Q[22]'
+Slack : -0.012
+TNS   : -0.012
+
+Type  : Fast 1200mV 0C Model Hold 'EFF24:InstReg|Q[22]'
+Slack : -0.003
+TNS   : -0.007
 
 Type  : Fast 1200mV 0C Model Hold 'clk0'
-Slack : 0.179
+Slack : 0.121
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'EFF32:OperandStage|Q[22]'
-Slack : 0.443
+Type  : Fast 1200mV 0C Model Hold 'EFF32:OperandStage|Q[18]'
+Slack : 0.166
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk0'
 Slack : -3.000
-TNS   : -670.817
+TNS   : -773.569
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'EFF32:OperandStage|Q[22]'
-Slack : 0.419
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'EFF32:OperandStage|Q[18]'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'EFF24:InstReg|Q[22]'
+Slack : 0.343
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_input'

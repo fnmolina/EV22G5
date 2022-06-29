@@ -1,4 +1,4 @@
-module RB 
+module RB	 
 	(	input wire clk, 
 		//Señales de control de microinstruccion 
 		input wire [1:0] MC,	//bit0 MW, bit1 MR
@@ -19,18 +19,22 @@ module RB
 		//Output memory data		
 		output reg [15:0] WRdata);
 
-	/* 	
-	*	35 16bit registers:
-	*	0-27:	General Purpose Registers 
-	*	28-29:	Input Ports	
-	*	30-31:	Output Ports
-	*	32-33: 	Aux registers 
-	*	34:		Working register
-	*/
+		
+		
 	reg [15:0] Register [0:34];
-
+	
 	//working register index 
 	parameter WR = 34;
+	
+	initial
+		begin
+			Register[1] = 16'b0000000011110000;
+			Register[2] = 16'b11110000;
+			Register[3] = 16'b11110000;
+			Register[WR] = 16'b0000000000001111;
+		end 
+
+
 
 	//Block 2
 	always @ (posedge clk) 
@@ -48,13 +52,13 @@ module RB
 	//Esto no me parece del todo bien. Si A o B no cambian podria no guardar un dato actualizado por C en el clk anterior?
 	always @ (busA or busB) 
 		begin 
-			if(busA <= WR)
+			if(busA != (WR+1))
 				begin
-				if(busB <= WR)
-					begin
+				B <= Register[busB];
+				end
+			if(busB != (WR+1))
+				begin
 					A <= Register[busA];
-					B <= Register[busB];
-					end
 				end
 		end
 endmodule

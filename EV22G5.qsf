@@ -100,11 +100,11 @@ set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
 set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
 set_location_assignment PIN_B8 -to clk_input
+set_global_assignment -name VERILOG_FILE modules/elatch.v
 set_global_assignment -name VERILOG_FILE modules/shifter.v
 set_global_assignment -name VERILOG_FILE modules/mux_k.v
 set_global_assignment -name VERILOG_FILE modules/mux.v
 set_global_assignment -name VERILOG_FILE modules/latch.v
-set_global_assignment -name VERILOG_FILE modules/elatch.v
 set_global_assignment -name VERILOG_FILE modules/alu.v
 set_global_assignment -name VERILOG_FILE modules/RB.v
 set_global_assignment -name VERILOG_FILE modules/EFF32.v

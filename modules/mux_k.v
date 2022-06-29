@@ -6,7 +6,7 @@ module mux_k (
 );
     always @(D0 or K or sel) begin
         if (sel) begin
-            Q <= K & 16'h01ff;
+            Q <= K;
         end else begin
             Q <= D0;
         end

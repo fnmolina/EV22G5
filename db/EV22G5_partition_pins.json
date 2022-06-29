@@ -4,70 +4,6 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "ALUout[15]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[14]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[13]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[12]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[11]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[10]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[9]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[8]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[7]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[6]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[5]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[4]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[3]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[2]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[1]",
-					"strict" : false
-				},
-				{
-					"name" : "ALUout[0]",
-					"strict" : false
-				},
-				{
 					"name" : "inst[23]",
 					"strict" : false
 				},
@@ -164,6 +100,70 @@
 					"strict" : false
 				},
 				{
+					"name" : "kout[15]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[14]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[13]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[12]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[11]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[10]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[9]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[8]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[7]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[6]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "kout[0]",
+					"strict" : false
+				},
+				{
 					"name" : "latchAout[15]",
 					"strict" : false
 				},
@@ -228,71 +228,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "latchBout[15]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[14]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[13]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[12]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[11]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[10]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[9]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[8]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[7]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[6]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[5]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[4]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[3]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[2]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[1]",
-					"strict" : false
-				},
-				{
-					"name" : "latchBout[0]",
-					"strict" : false
-				},
-				{
 					"name" : "MIR_output[32]",
+					"strict" : false
+				},
+				{
+					"name" : "MIR_output[31]",
+					"strict" : false
+				},
+				{
+					"name" : "MIR_output[30]",
 					"strict" : false
 				},
 				{
@@ -300,23 +244,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "MIR_output[28]",
+					"name" : "MIR_output[26]",
+					"strict" : false
+				},
+				{
+					"name" : "MIR_output[25]",
+					"strict" : false
+				},
+				{
+					"name" : "MIR_output[24]",
 					"strict" : false
 				},
 				{
 					"name" : "MIR_output[23]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[22]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[21]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[20]",
 					"strict" : false
 				},
 				{
@@ -353,6 +293,10 @@
 				},
 				{
 					"name" : "MIR_output[11]",
+					"strict" : false
+				},
+				{
+					"name" : "MIR_output[10]",
 					"strict" : false
 				},
 				{
