@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/28/2022 16:29:10"
+// Generated on "06/30/2022 03:45:52"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          EV22G5
 // 
@@ -31,34 +31,32 @@ module EV22G5_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk0;
+reg clk1;
 reg clk_input;
 // wires                                               
-wire [4:0] busAout;
-wire [5:0] busBout;
-wire [5:0] busCout;
+wire [15:0] Blatch;
+wire [5:0] busC;
 wire clk;
-wire [23:0] inst;
-wire [15:0] latchAout;
-wire [15:0] latchBout;
+wire [23:0] instruction;
 wire [32:0] MIR_output;
-wire [1:0] MRMWout;
-wire [11:0] pc_output;
+wire [15:0] PO0;
+wire [15:0] SalidaALU;
+wire [15:0] WRCurrent;
 
 // assign statements (if any)                          
 EV22G5 i1 (
 // port map - connection between master ports and signals/registers   
-	.busAout(busAout),
-	.busBout(busBout),
-	.busCout(busCout),
+	.Blatch(Blatch),
+	.busC(busC),
 	.clk(clk),
 	.clk0(clk0),
+	.clk1(clk1),
 	.clk_input(clk_input),
-	.inst(inst),
-	.latchAout(latchAout),
-	.latchBout(latchBout),
+	.instruction(instruction),
 	.MIR_output(MIR_output),
-	.MRMWout(MRMWout),
-	.pc_output(pc_output)
+	.PO0(PO0),
+	.SalidaALU(SalidaALU),
+	.WRCurrent(WRCurrent)
 );
 initial 
 begin 
@@ -71,6 +69,20 @@ begin
 	clk0 = 1'b0;
 	clk0 = #500000 1'b1;
 	#500000;
+end 
+
+// clk1
+initial
+begin
+	clk1 = 1'b1;
+	# 500000;
+	repeat(49)
+	begin
+		clk1 = 1'b0;
+		clk1 = #500000 1'b1;
+		# 500000;
+	end
+	clk1 = 1'b0;
 end 
 endmodule
 

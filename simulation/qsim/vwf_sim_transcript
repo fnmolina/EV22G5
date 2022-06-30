@@ -1,17 +1,17 @@
 Determining the location of the ModelSim executable...
 
-Using: D:\intelFPGA\20.1\modelsim_ase\win32aloem
+Using: C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source="D:/intelFPGA/Projects/EV22G5/Waveform.vwf" --testbench_file="D:/intelFPGA/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source="C:/intelFPGA_lite/Projects/EV22G5/Waveform.vwf" --testbench_file="C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -26,13 +26,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Jun 28 16:29:09 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source=D:/intelFPGA/Projects/EV22G5/Waveform.vwf --testbench_file=D:/intelFPGA/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt
+    Info: Processing started: Thu Jun 30 03:45:51 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source=C:/intelFPGA_lite/Projects/EV22G5/Waveform.vwf --testbench_file=C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
-source file when writing test bench files
-
-ng (201005): Ignoring output pin "latchAout[9]" in vector source file when writing test bench files
+ (201005): Ignoring output pin "PO0[9]" in vector source file when writing test bench files
 
 Completed successfully. 
 
@@ -40,11 +38,11 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/intelFPGA/Projects/EV22G5/simulation/qsim/" EV22G5 -c EV22G5
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/" EV22G5 -c EV22G5
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -59,13 +57,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Tue Jun 28 16:29:11 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/intelFPGA/Projects/EV22G5/simulation/qsim/ EV22G5 -c EV22G5
+    Info: Processing started: Thu Jun 30 03:45:53 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/ EV22G5 -c EV22G5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file EV22G5.vo in folder "D:/intelFPGA/Projects/EV22G5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file EV22G5.vo in folder "C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4647 megabytes
-    Info: Processing ended: Tue Jun 28 16:29:12 2022
+    Info: Peak virtual memory: 4646 megabytes
+    Info: Processing ended: Thu Jun 30 03:45:54 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -73,19 +71,15 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-D:/intelFPGA/Projects/EV22G5/simulation/qsim/EV22G5.do generated.
+C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/EV22G5.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-D:/intelFPGA/20.1/modelsim_ase/win32aloem/vsim -c -do EV22G5.do
+C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vsim -c -do EV22G5.do
 
 Reading pref.tcl
-# ** Warning: (vish-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/VSOUTvcarzb' failed.
-# Permission denied. (errno = EACCES)
-# ** Warning: (vsim-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.e4qg0d' failed.
-# Permission denied. (errno = EACCES)
 
 # 2020.1
 
@@ -93,38 +87,32 @@ Reading pref.tcl
 # do EV22G5.do
 
 # ** Warning: (vlib-34) Library already exists at "work".
+
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:29:13 on Jun 28,2022
+# Start time: 03:45:58 on Jun 30,2022
 # vlog -work work EV22G5.vo 
-# ** Warning: (vlog-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.sncd87' failed.
-# Permission denied. (errno = EACCES)
 
 # -- Compiling module EV22G5
 
 # 
 # Top level modules:
 # 	EV22G5
-
-# End time: 16:29:14 on Jun 28,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 1
+# End time: 03:45:58 on Jun 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 16:29:14 on Jun 28,2022
+# Start time: 03:45:58 on Jun 30,2022
 # vlog -work work Waveform.vwf.vt 
-# ** Warning: (vlog-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.sxv8g9' failed.
-# Permission denied. (errno = EACCES)
 
 # -- Compiling module EV22G5_vlg_vec_tst
 # 
 # Top level modules:
 # 	EV22G5_vlg_vec_tst
-# End time: 16:29:14 on Jun 28,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
+# End time: 03:45:58 on Jun 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.EV22G5_vlg_vec_tst 
-# Start time: 16:29:14 on Jun 28,2022
-# ** Warning: (vsim-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.8gnvnx' failed.
-# Permission denied. (errno = EACCES)
+# Start time: 03:45:59 on Jun 30,2022
 # Loading work.EV22G5_vlg_vec_tst
 # Loading work.EV22G5
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -142,24 +130,24 @@ Reading pref.tcl
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
-# after#30
+# after#25
 
-# ** Note: $finish    : Waveform.vwf.vt(65)
+# ** Note: $finish    : Waveform.vwf.vt(63)
 #    Time: 50 us  Iteration: 0  Instance: /EV22G5_vlg_vec_tst
-# End time: 16:29:16 on Jun 28,2022, Elapsed time: 0:00:02
-# Errors: 0, Warnings: 1
+# End time: 03:46:00 on Jun 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading D:/intelFPGA/Projects/EV22G5/Waveform.vwf...
+Reading C:/intelFPGA_lite/Projects/EV22G5/Waveform.vwf...
 
-Reading D:/intelFPGA/Projects/EV22G5/simulation/qsim/EV22G5.msim.vcd...
+Reading C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/EV22G5.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to D:/intelFPGA/Projects/EV22G5/simulation/qsim/EV22G5_20220628162916.sim.vwf
+Writing the resulting VWF to C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/EV22G5_20220630034600.sim.vwf
 
 Finished VCD to VWF conversion.
 

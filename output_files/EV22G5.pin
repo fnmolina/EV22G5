@@ -64,112 +64,112 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 CHIP  "EV22G5"  ASSIGNED TO AN: EP4CE22F17C6
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : A2        :        :                   :         : 8         :                
-MIR_output[13]               : A3        : output : 2.5 V             :         : 8         : N              
-inst[10]                     : A4        : output : 2.5 V             :         : 8         : N              
-latchAout[12]                : A5        : output : 2.5 V             :         : 8         : N              
-pc_output[9]                 : A6        : output : 2.5 V             :         : 8         : N              
-pc_output[2]                 : A7        : output : 2.5 V             :         : 8         : N              
+Blatch[15]                   : A2        : output : 2.5 V             :         : 8         : N              
+PO0[13]                      : A3        : output : 2.5 V             :         : 8         : N              
+instruction[17]              : A4        : output : 2.5 V             :         : 8         : N              
+Blatch[4]                    : A5        : output : 2.5 V             :         : 8         : N              
+Blatch[5]                    : A6        : output : 2.5 V             :         : 8         : N              
+MIR_output[10]               : A7        : output : 2.5 V             :         : 8         : N              
 clk0                         : A8        : input  : 2.5 V             :         : 8         : N              
 GND+                         : A9        :        :                   :         : 7         :                
-MIR_output[6]                : A10       : output : 2.5 V             :         : 7         : N              
-inst[16]                     : A11       : output : 2.5 V             :         : 7         : N              
-inst[20]                     : A12       : output : 2.5 V             :         : 7         : N              
-MIR_output[26]               : A13       : output : 2.5 V             :         : 7         : N              
-pc_output[8]                 : A14       : output : 2.5 V             :         : 7         : N              
-inst[17]                     : A15       : output : 2.5 V             :         : 7         : N              
+instruction[20]              : A10       : output : 2.5 V             :         : 7         : N              
+instruction[12]              : A11       : output : 2.5 V             :         : 7         : N              
+PO0[15]                      : A12       : output : 2.5 V             :         : 7         : N              
+MIR_output[7]                : A13       : output : 2.5 V             :         : 7         : N              
+instruction[21]              : A14       : output : 2.5 V             :         : 7         : N              
+instruction[5]               : A15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-inst[1]                      : B1        : output : 2.5 V             :         : 1         : N              
+MIR_output[6]                : B1        : output : 2.5 V             :         : 1         : N              
 GND                          : B2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
-MIR_output[18]               : B4        : output : 2.5 V             :         : 8         : N              
-inst[13]                     : B5        : output : 2.5 V             :         : 8         : N              
-inst[15]                     : B6        : output : 2.5 V             :         : 8         : N              
-kout[13]                     : B7        : output : 2.5 V             :         : 8         : N              
+instruction[0]               : B3        : output : 2.5 V             :         : 8         : N              
+instruction[18]              : B4        : output : 2.5 V             :         : 8         : N              
+Blatch[7]                    : B5        : output : 2.5 V             :         : 8         : N              
+MIR_output[8]                : B6        : output : 2.5 V             :         : 8         : N              
+instruction[23]              : B7        : output : 2.5 V             :         : 8         : N              
 clk_input                    : B8        : input  : 2.5 V             :         : 8         : Y              
 GND+                         : B9        :        :                   :         : 7         :                
-inst[18]                     : B10       : output : 2.5 V             :         : 7         : N              
-inst[19]                     : B11       : output : 2.5 V             :         : 7         : N              
-inst[21]                     : B12       : output : 2.5 V             :         : 7         : N              
-MIR_output[25]               : B13       : output : 2.5 V             :         : 7         : N              
-inst[22]                     : B14       : output : 2.5 V             :         : 7         : N              
+instruction[2]               : B10       : output : 2.5 V             :         : 7         : N              
+instruction[4]               : B11       : output : 2.5 V             :         : 7         : N              
+SalidaALU[11]                : B12       : output : 2.5 V             :         : 7         : N              
+SalidaALU[13]                : B13       : output : 2.5 V             :         : 7         : N              
+MIR_output[11]               : B14       : output : 2.5 V             :         : 7         : N              
 GND                          : B15       : gnd    :                   :         :           :                
-MIR_output[9]                : B16       : output : 2.5 V             :         : 6         : N              
+SalidaALU[14]                : B16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-MIR_output[22]               : C2        : output : 2.5 V             :         : 1         : N              
-inst[14]                     : C3        : output : 2.5 V             :         : 8         : N              
+instruction[19]              : C2        : output : 2.5 V             :         : 1         : N              
+MIR_output[30]               : C3        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-inst[4]                      : C6        : output : 2.5 V             :         : 8         : N              
+MIR_output[5]                : C6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-pc_output[10]                : C8        : output : 2.5 V             :         : 8         : N              
-pc_output[3]                 : C9        : output : 2.5 V             :         : 7         : N              
+MIR_output[24]               : C8        : output : 2.5 V             :         : 8         : N              
+MIR_output[29]               : C9        : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-MIR_output[31]               : C11       : output : 2.5 V             :         : 7         : N              
+instruction[3]               : C11       : output : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : C14       :        :                   :         : 7         :                
-MIR_output[30]               : C15       : output : 2.5 V             :         : 6         : N              
-kout[14]                     : C16       : output : 2.5 V             :         : 6         : N              
-inst[5]                      : D1        : output : 2.5 V             :         : 1         : N              
+MIR_output[19]               : C14       : output : 2.5 V             :         : 7         : N              
+SalidaALU[9]                 : C15       : output : 2.5 V             :         : 6         : N              
+instruction[11]              : C16       : output : 2.5 V             :         : 6         : N              
+MIR_output[13]               : D1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
 clk                          : D3        : output : 2.5 V             :         : 8         : N              
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D5        :        :                   :         : 8         :                
-inst[7]                      : D6        : output : 2.5 V             :         : 8         : N              
+MIR_output[26]               : D5        : output : 2.5 V             :         : 8         : N              
+MIR_output[16]               : D6        : output : 2.5 V             :         : 8         : N              
 GND                          : D7        : gnd    :                   :         :           :                
-pc_output[4]                 : D8        : output : 2.5 V             :         : 8         : N              
-pc_output[5]                 : D9        : output : 2.5 V             :         : 7         : N              
+MIR_output[25]               : D8        : output : 2.5 V             :         : 8         : N              
+instruction[13]              : D9        : output : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-inst[0]                      : D11       : output : 2.5 V             :         : 7         : N              
-kout[6]                      : D12       : output : 2.5 V             :         : 7         : N              
+instruction[10]              : D11       : output : 2.5 V             :         : 7         : N              
+MIR_output[20]               : D12       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D14       :        :                   :         : 7         :                
-MIR_output[23]               : D15       : output : 2.5 V             :         : 6         : N              
-MIR_output[12]               : D16       : output : 2.5 V             :         : 6         : N              
+MIR_output[23]               : D14       : output : 2.5 V             :         : 7         : N              
+instruction[14]              : D15       : output : 2.5 V             :         : 6         : N              
+instruction[8]               : D16       : output : 2.5 V             :         : 6         : N              
 GND+                         : E1        :        :                   :         : 1         :                
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
-MIR_output[11]               : E6        : output : 2.5 V             :         : 8         : N              
-pc_output[1]                 : E7        : output : 2.5 V             :         : 8         : N              
-pc_output[7]                 : E8        : output : 2.5 V             :         : 8         : N              
-pc_output[0]                 : E9        : output : 2.5 V             :         : 7         : N              
-inst[6]                      : E10       : output : 2.5 V             :         : 7         : N              
-inst[23]                     : E11       : output : 2.5 V             :         : 7         : N              
+Blatch[6]                    : E6        : output : 2.5 V             :         : 8         : N              
+instruction[16]              : E7        : output : 2.5 V             :         : 8         : N              
+instruction[22]              : E8        : output : 2.5 V             :         : 8         : N              
+Blatch[2]                    : E9        : output : 2.5 V             :         : 7         : N              
+MIR_output[1]                : E10       : output : 2.5 V             :         : 7         : N              
+instruction[15]              : E11       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 GND+                         : E15       :        :                   :         : 6         :                
 GND+                         : E16       :        :                   :         : 6         :                
-MIR_output[24]               : F1        : output : 2.5 V             :         : 1         : N              
-latchAout[6]                 : F2        : output : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : F3        :        :                   :         : 1         :                
+WRCurrent[14]                : F1        : output : 2.5 V             :         : 1         : N              
+MIR_output[32]               : F2        : output : 2.5 V             :         : 1         : N              
+MIR_output[31]               : F3        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : F4        :        :                   :         : 1         :                
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-pc_output[6]                 : F8        : output : 2.5 V             :         : 8         : N              
-pc_output[11]                : F9        : output : 2.5 V             :         : 7         : N              
+MIR_output[9]                : F8        : output : 2.5 V             :         : 8         : N              
+instruction[9]               : F9        : output : 2.5 V             :         : 7         : N              
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-MIR_output[10]               : F13       : output : 2.5 V             :         : 6         : N              
-MIR_output[19]               : F14       : output : 2.5 V             :         : 6         : N              
-MIR_output[7]                : F15       : output : 2.5 V             :         : 6         : N              
+Blatch[0]                    : F13       : output : 2.5 V             :         : 6         : N              
+PO0[11]                      : F14       : output : 2.5 V             :         : 6         : N              
+MIR_output[3]                : F15       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
-MIR_output[8]                : G1        : output : 2.5 V             :         : 1         : N              
-inst[12]                     : G2        : output : 2.5 V             :         : 1         : N              
+Blatch[8]                    : G1        : output : 2.5 V             :         : 1         : N              
+MIR_output[15]               : G2        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-latchAout[14]                : G5        : output : 2.5 V             :         : 1         : N              
+Blatch[1]                    : G5        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : G6        : power  :                   : 1.2V    :           :                
 VCCINT                       : G7        : power  :                   : 1.2V    :           :                
 VCCINT                       : G8        : power  :                   : 1.2V    :           :                
@@ -179,8 +179,8 @@ GND                          : G11       : gnd    :                   :         
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-inst[9]                      : G15       : output : 2.5 V             :         : 6         : N              
-MIR_output[29]               : G16       : output : 2.5 V             :         : 6         : N              
+Blatch[3]                    : G15       : output : 2.5 V             :         : 6         : N              
+MIR_output[0]                : G16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
 TCK                          : H3        : input  :                   :         : 1         :                
@@ -197,8 +197,8 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-kout[9]                      : J1        : output : 2.5 V             :         : 2         : N              
-latchAout[13]                : J2        : output : 2.5 V             :         : 2         : N              
+MIR_output[14]               : J1        : output : 2.5 V             :         : 2         : N              
+Blatch[10]                   : J2        : output : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
@@ -209,15 +209,15 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
-latchAout[10]                : J13       : output : 2.5 V             :         : 5         : N              
-inst[8]                      : J14       : output : 2.5 V             :         : 5         : N              
-MIR_output[32]               : J15       : output : 2.5 V             :         : 5         : N              
-latchAout[8]                 : J16       : output : 2.5 V             :         : 5         : N              
-MIR_output[4]                : K1        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : K2        :        :                   :         : 2         :                
+PO0[0]                       : J13       : output : 2.5 V             :         : 5         : N              
+PO0[6]                       : J14       : output : 2.5 V             :         : 5         : N              
+PO0[7]                       : J15       : output : 2.5 V             :         : 5         : N              
+PO0[9]                       : J16       : output : 2.5 V             :         : 5         : N              
+instruction[7]               : K1        : output : 2.5 V             :         : 2         : N              
+WRCurrent[1]                 : K2        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : K5        :        :                   :         : 2         :                
+SalidaALU[2]                 : K5        : output : 2.5 V             :         : 2         : N              
 GND                          : K6        : gnd    :                   :         :           :                
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -227,101 +227,101 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-MIR_output[5]                : K15       : output : 2.5 V             :         : 5         : N              
-inst[2]                      : K16       : output : 2.5 V             :         : 5         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L1        :        :                   :         : 2         :                
-kout[12]                     : L2        : output : 2.5 V             :         : 2         : N              
-MIR_output[14]               : L3        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : L4        :        :                   :         : 2         :                
+PO0[12]                      : K15       : output : 2.5 V             :         : 5         : N              
+WRCurrent[12]                : K16       : output : 2.5 V             :         : 5         : N              
+PO0[1]                       : L1        : output : 2.5 V             :         : 2         : N              
+SalidaALU[4]                 : L2        : output : 2.5 V             :         : 2         : N              
+SalidaALU[12]                : L3        : output : 2.5 V             :         : 2         : N              
+SalidaALU[8]                 : L4        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
-MIR_output[16]               : L7        : output : 2.5 V             :         : 3         : N              
-MIR_output[3]                : L8        : output : 2.5 V             :         : 3         : N              
+Blatch[9]                    : L7        : output : 2.5 V             :         : 3         : N              
+WRCurrent[6]                 : L8        : output : 2.5 V             :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
-kout[8]                      : L13       : output : 2.5 V             :         : 5         : N              
-latchAout[9]                 : L14       : output : 2.5 V             :         : 5         : N              
-MIR_output[0]                : L15       : output : 2.5 V             :         : 5         : N              
-inst[11]                     : L16       : output : 2.5 V             :         : 5         : N              
+busC[5]                      : L13       : output : 2.5 V             :         : 5         : N              
+SalidaALU[7]                 : L14       : output : 2.5 V             :         : 5         : N              
+Blatch[11]                   : L15       : output : 2.5 V             :         : 5         : N              
+busC[0]                      : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 GND+                         : M2        :        :                   :         : 2         :                
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-kout[4]                      : M6        : output : 2.5 V             :         : 3         : N              
-latchAout[3]                 : M7        : output : 2.5 V             :         : 3         : N              
-kout[5]                      : M8        : output : 2.5 V             :         : 3         : N              
+WRCurrent[9]                 : M6        : output : 2.5 V             :         : 3         : N              
+instruction[1]               : M7        : output : 2.5 V             :         : 3         : N              
+SalidaALU[10]                : M8        : output : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
-MIR_output[27]               : M10       : output : 2.5 V             :         : 4         : N              
+PO0[8]                       : M10       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N1        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 3         :                
+SalidaALU[15]                : N1        : output : 2.5 V             :         : 2         : N              
+WRCurrent[15]                : N2        : output : 2.5 V             :         : 2         : N              
+MIR_output[22]               : N3        : output : 2.5 V             :         : 3         : N              
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N5        :        :                   :         : 3         :                
-latchAout[1]                 : N6        : output : 2.5 V             :         : 3         : N              
+WRCurrent[11]                : N6        : output : 2.5 V             :         : 3         : N              
 GND                          : N7        : gnd    :                   :         :           :                
-kout[3]                      : N8        : output : 2.5 V             :         : 3         : N              
-MIR_output[17]               : N9        : output : 2.5 V             :         : 4         : N              
+MIR_output[12]               : N8        : output : 2.5 V             :         : 3         : N              
+clk1                         : N9        : input  : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-latchAout[15]                : N11       : output : 2.5 V             :         : 4         : N              
-MIR_output[21]               : N12       : output : 2.5 V             :         : 4         : N              
+PO0[2]                       : N11       : output : 2.5 V             :         : 4         : N              
+WRCurrent[10]                : N12       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : N14       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N15       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : N16       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
+WRCurrent[0]                 : N15       : output : 2.5 V             :         : 5         : N              
+SalidaALU[3]                 : N16       : output : 2.5 V             :         : 5         : N              
+MIR_output[2]                : P1        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 3         :                
+WRCurrent[13]                : P3        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P6        :        :                   :         : 3         :                
+WRCurrent[7]                 : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-kout[1]                      : P8        : output : 2.5 V             :         : 3         : N              
-kout[10]                     : P9        : output : 2.5 V             :         : 4         : N              
+WRCurrent[8]                 : P8        : output : 2.5 V             :         : 3         : N              
+SalidaALU[5]                 : P9        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-latchAout[0]                 : P11       : output : 2.5 V             :         : 4         : N              
+PO0[3]                       : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
-MIR_output[20]               : P14       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P15       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : P16       :        :                   :         : 5         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P14       :        :                   :         : 4         :                
+PO0[4]                       : P15       : output : 2.5 V             :         : 5         : N              
+MIR_output[28]               : P16       : output : 2.5 V             :         : 5         : N              
+PO0[10]                      : R1        : output : 2.5 V             :         : 2         : N              
 GND                          : R2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R3        :        :                   :         : 3         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R4        :        :                   :         : 3         :                
-kout[15]                     : R5        : output : 2.5 V             :         : 3         : N              
-MIR_output[15]               : R6        : output : 2.5 V             :         : 3         : N              
-MIR_output[2]                : R7        : output : 2.5 V             :         : 3         : N              
+MIR_output[4]                : R3        : output : 2.5 V             :         : 3         : N              
+MIR_output[21]               : R4        : output : 2.5 V             :         : 3         : N              
+instruction[6]               : R5        : output : 2.5 V             :         : 3         : N              
+Blatch[13]                   : R6        : output : 2.5 V             :         : 3         : N              
+MIR_output[18]               : R7        : output : 2.5 V             :         : 3         : N              
 GND+                         : R8        :        :                   :         : 3         :                
 GND+                         : R9        :        :                   :         : 4         :                
-kout[0]                      : R10       : output : 2.5 V             :         : 4         : N              
-latchAout[2]                 : R11       : output : 2.5 V             :         : 4         : N              
-kout[11]                     : R12       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : R13       :        :                   :         : 4         :                
+busC[2]                      : R10       : output : 2.5 V             :         : 4         : N              
+PO0[5]                       : R11       : output : 2.5 V             :         : 4         : N              
+WRCurrent[5]                 : R12       : output : 2.5 V             :         : 4         : N              
+busC[1]                      : R13       : output : 2.5 V             :         : 4         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : R14       :        :                   :         : 4         :                
 GND                          : R15       : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : R16       :        :                   :         : 5         :                
+WRCurrent[4]                 : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-inst[3]                      : T2        : output : 2.5 V             :         : 3         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T3        :        :                   :         : 3         :                
-latchAout[4]                 : T4        : output : 2.5 V             :         : 3         : N              
-latchAout[7]                 : T5        : output : 2.5 V             :         : 3         : N              
-MIR_output[1]                : T6        : output : 2.5 V             :         : 3         : N              
-kout[7]                      : T7        : output : 2.5 V             :         : 3         : N              
+PO0[14]                      : T2        : output : 2.5 V             :         : 3         : N              
+MIR_output[27]               : T3        : output : 2.5 V             :         : 3         : N              
+WRCurrent[2]                 : T4        : output : 2.5 V             :         : 3         : N              
+Blatch[12]                   : T5        : output : 2.5 V             :         : 3         : N              
+MIR_output[17]               : T6        : output : 2.5 V             :         : 3         : N              
+busC[4]                      : T7        : output : 2.5 V             :         : 3         : N              
 GND+                         : T8        :        :                   :         : 3         :                
 GND+                         : T9        :        :                   :         : 4         :                
-latchAout[5]                 : T10       : output : 2.5 V             :         : 4         : N              
-latchAout[11]                : T11       : output : 2.5 V             :         : 4         : N              
-kout[2]                      : T12       : output : 2.5 V             :         : 4         : N              
-MIR_output[28]               : T13       : output : 2.5 V             :         : 4         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : T14       :        :                   :         : 4         :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : T15       :        :                   :         : 4         :                
+SalidaALU[1]                 : T10       : output : 2.5 V             :         : 4         : N              
+WRCurrent[3]                 : T11       : output : 2.5 V             :         : 4         : N              
+SalidaALU[6]                 : T12       : output : 2.5 V             :         : 4         : N              
+SalidaALU[0]                 : T13       : output : 2.5 V             :         : 4         : N              
+busC[3]                      : T14       : output : 2.5 V             :         : 4         : N              
+Blatch[14]                   : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                
