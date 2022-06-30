@@ -70,106 +70,106 @@ CHIP  "EV22G5"  ASSIGNED TO AN: EP4CE22F17C6
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 VCCIO8                       : A1        : power  :                   : 2.5V    : 8         :                
-instruction[3]               : A2        : output : 2.5 V             :         : 8         : N              
-instruction[4]               : A3        : output : 2.5 V             :         : 8         : N              
-SalidaALU[4]                 : A4        : output : 2.5 V             :         : 8         : N              
-PO0[7]                       : A5        : output : 2.5 V             :         : 8         : N              
-instruction[12]              : A6        : output : 2.5 V             :         : 8         : N              
-instruction[0]               : A7        : output : 2.5 V             :         : 8         : N              
+SalidaALU[2]                 : A2        : output : 2.5 V             :         : 8         : N              
+SalidaALU[4]                 : A3        : output : 2.5 V             :         : 8         : N              
+regRead                      : A4        : output : 2.5 V             :         : 8         : N              
+AlatchOut[7]                 : A5        : output : 2.5 V             :         : 8         : N              
+SalidaALU[11]                : A6        : output : 2.5 V             :         : 8         : N              
+BlatchOut[3]                 : A7        : output : 2.5 V             :         : 8         : N              
 clk0                         : A8        : input  : 2.5 V             :         : 8         : N              
 GND+                         : A9        :        :                   :         : 7         :                
-instruction[23]              : A10       : output : 2.5 V             :         : 7         : N              
-BlatchOut[14]                : A11       : output : 2.5 V             :         : 7         : N              
-AlatchOut[3]                 : A12       : output : 2.5 V             :         : 7         : N              
-PO0[13]                      : A13       : output : 2.5 V             :         : 7         : N              
-AlatchOut[10]                : A14       : output : 2.5 V             :         : 7         : N              
-instruction[19]              : A15       : output : 2.5 V             :         : 7         : N              
+SalidaALU[12]                : A10       : output : 2.5 V             :         : 7         : N              
+PO0[12]                      : A11       : output : 2.5 V             :         : 7         : N              
+WRcurrent[8]                 : A12       : output : 2.5 V             :         : 7         : N              
+AlatchOut[9]                 : A13       : output : 2.5 V             :         : 7         : N              
+WRcurrent[2]                 : A14       : output : 2.5 V             :         : 7         : N              
+AlatchOut[2]                 : A15       : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : A16       : power  :                   : 2.5V    : 7         :                
-instruction[11]              : B1        : output : 2.5 V             :         : 1         : N              
+SalidaALU[15]                : B1        : output : 2.5 V             :         : 1         : N              
 GND                          : B2        : gnd    :                   :         :           :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : B3        :        :                   :         : 8         :                
-AlatchOut[4]                 : B4        : output : 2.5 V             :         : 8         : N              
-PO0[10]                      : B5        : output : 2.5 V             :         : 8         : N              
-instruction[20]              : B6        : output : 2.5 V             :         : 8         : N              
-instruction[10]              : B7        : output : 2.5 V             :         : 8         : N              
+WRcurrent[1]                 : B3        : output : 2.5 V             :         : 8         : N              
+SalidaALU[14]                : B4        : output : 2.5 V             :         : 8         : N              
+AlatchOut[5]                 : B5        : output : 2.5 V             :         : 8         : N              
+BlatchOut[7]                 : B6        : output : 2.5 V             :         : 8         : N              
+BlatchOut[4]                 : B7        : output : 2.5 V             :         : 8         : N              
 clk_input                    : B8        : input  : 2.5 V             :         : 8         : Y              
 GND+                         : B9        :        :                   :         : 7         :                
-instruction[8]               : B10       : output : 2.5 V             :         : 7         : N              
-AluIn[1]                     : B11       : output : 2.5 V             :         : 7         : N              
-AlatchOut[1]                 : B12       : output : 2.5 V             :         : 7         : N              
-SalidaALU[15]                : B13       : output : 2.5 V             :         : 7         : N              
-AlatchOut[6]                 : B14       : output : 2.5 V             :         : 7         : N              
+BlatchOut[8]                 : B10       : output : 2.5 V             :         : 7         : N              
+busBout[0]                   : B11       : output : 2.5 V             :         : 7         : N              
+PO0[8]                       : B12       : output : 2.5 V             :         : 7         : N              
+AlatchOut[12]                : B13       : output : 2.5 V             :         : 7         : N              
+PO0[4]                       : B14       : output : 2.5 V             :         : 7         : N              
 GND                          : B15       : gnd    :                   :         :           :                
-SalidaALU[1]                 : B16       : output : 2.5 V             :         : 6         : N              
+regwrite                     : B16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : C1        : input  : 2.5 V             :         : 1         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : C2        :        :                   :         : 1         :                
-busBout[4]                   : C3        : output : 2.5 V             :         : 8         : N              
+SalidaALU[1]                 : C2        : output : 2.5 V             :         : 1         : N              
+WRcurrent[15]                : C3        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C4        : power  :                   : 2.5V    : 8         :                
 GND                          : C5        : gnd    :                   :         :           :                
-instruction[21]              : C6        : output : 2.5 V             :         : 8         : N              
+AluIn[2]                     : C6        : output : 2.5 V             :         : 8         : N              
 VCCIO8                       : C7        : power  :                   : 2.5V    : 8         :                
-instruction[1]               : C8        : output : 2.5 V             :         : 8         : N              
-instruction[9]               : C9        : output : 2.5 V             :         : 7         : N              
+BlatchOut[1]                 : C8        : output : 2.5 V             :         : 8         : N              
+BlatchOut[2]                 : C9        : output : 2.5 V             :         : 7         : N              
 VCCIO7                       : C10       : power  :                   : 2.5V    : 7         :                
-BlatchOut[6]                 : C11       : output : 2.5 V             :         : 7         : N              
+PO0[6]                       : C11       : output : 2.5 V             :         : 7         : N              
 GND                          : C12       : gnd    :                   :         :           :                
 VCCIO7                       : C13       : power  :                   : 2.5V    : 7         :                
-PO0[12]                      : C14       : output : 2.5 V             :         : 7         : N              
-SalidaALU[3]                 : C15       : output : 2.5 V             :         : 6         : N              
-AlatchOut[9]                 : C16       : output : 2.5 V             :         : 6         : N              
-instruction[14]              : D1        : output : 2.5 V             :         : 1         : N              
+SalidaALU[13]                : C14       : output : 2.5 V             :         : 7         : N              
+clk1                         : C15       : input  : 2.5 V             :         : 6         : N              
+WRcurrent[12]                : C16       : output : 2.5 V             :         : 6         : N              
+AluIn[3]                     : D1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_FLASH_nCE_nCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : D2        : input  : 2.5 V             :         : 1         : N              
 clk                          : D3        : output : 2.5 V             :         : 8         : N              
 VCCD_PLL3                    : D4        : power  :                   : 1.2V    :           :                
-WRcurrent[14]                : D5        : output : 2.5 V             :         : 8         : N              
-instruction[6]               : D6        : output : 2.5 V             :         : 8         : N              
+busBout[2]                   : D5        : output : 2.5 V             :         : 8         : N              
+SalidaALU[10]                : D6        : output : 2.5 V             :         : 8         : N              
 GND                          : D7        : gnd    :                   :         :           :                
-WRread                       : D8        : output : 2.5 V             :         : 8         : N              
-instruction[5]               : D9        : output : 2.5 V             :         : 7         : N              
+AlatchOut[0]                 : D8        : output : 2.5 V             :         : 8         : N              
+BlatchOut[12]                : D9        : output : 2.5 V             :         : 7         : N              
 GND                          : D10       : gnd    :                   :         :           :                
-instruction[16]              : D11       : output : 2.5 V             :         : 7         : N              
-busBout[3]                   : D12       : output : 2.5 V             :         : 7         : N              
+AlatchOut[15]                : D11       : output : 2.5 V             :         : 7         : N              
+SalidaALU[9]                 : D12       : output : 2.5 V             :         : 7         : N              
 VCCD_PLL2                    : D13       : power  :                   : 1.2V    :           :                
-AlatchOut[8]                 : D14       : output : 2.5 V             :         : 7         : N              
-instruction[2]               : D15       : output : 2.5 V             :         : 6         : N              
-instruction[18]              : D16       : output : 2.5 V             :         : 6         : N              
-clk1                         : E1        : input  : 2.5 V             :         : 1         : N              
+SalidaALU[6]                 : D14       : output : 2.5 V             :         : 7         : N              
+SalidaALU[8]                 : D15       : output : 2.5 V             :         : 6         : N              
+SalidaALU[5]                 : D16       : output : 2.5 V             :         : 6         : N              
+GND+                         : E1        :        :                   :         : 1         :                
 GND                          : E2        : gnd    :                   :         :           :                
 VCCIO1                       : E3        : power  :                   : 2.5V    : 1         :                
 GND                          : E4        : gnd    :                   :         :           :                
 GNDA3                        : E5        : gnd    :                   :         :           :                
-instruction[13]              : E6        : output : 2.5 V             :         : 8         : N              
-WRcurrent[15]                : E7        : output : 2.5 V             :         : 8         : N              
-instruction[7]               : E8        : output : 2.5 V             :         : 8         : N              
-regRead                      : E9        : output : 2.5 V             :         : 7         : N              
-AluIn[3]                     : E10       : output : 2.5 V             :         : 7         : N              
-AlatchOut[5]                 : E11       : output : 2.5 V             :         : 7         : N              
+BlatchOut[15]                : E6        : output : 2.5 V             :         : 8         : N              
+AluIn[0]                     : E7        : output : 2.5 V             :         : 8         : N              
+WRcurrent[7]                 : E8        : output : 2.5 V             :         : 8         : N              
+AlatchOut[10]                : E9        : output : 2.5 V             :         : 7         : N              
+busC[4]                      : E10       : output : 2.5 V             :         : 7         : N              
+AlatchOut[14]                : E11       : output : 2.5 V             :         : 7         : N              
 GNDA2                        : E12       : gnd    :                   :         :           :                
 GND                          : E13       : gnd    :                   :         :           :                
 VCCIO6                       : E14       : power  :                   : 2.5V    : 6         :                
 GND+                         : E15       :        :                   :         : 6         :                
 GND+                         : E16       :        :                   :         : 6         :                
-BlatchOut[12]                : F1        : output : 2.5 V             :         : 1         : N              
-PO0[2]                       : F2        : output : 2.5 V             :         : 1         : N              
-instruction[17]              : F3        : output : 2.5 V             :         : 1         : N              
+AluIn[1]                     : F1        : output : 2.5 V             :         : 1         : N              
+SalidaALU[0]                 : F2        : output : 2.5 V             :         : 1         : N              
+BlatchOut[9]                 : F3        : output : 2.5 V             :         : 1         : N              
 nSTATUS                      : F4        :        :                   :         : 1         :                
 VCCA3                        : F5        : power  :                   : 2.5V    :           :                
 GND                          : F6        : gnd    :                   :         :           :                
 VCCINT                       : F7        : power  :                   : 1.2V    :           :                
-instruction[15]              : F8        : output : 2.5 V             :         : 8         : N              
-instruction[22]              : F9        : output : 2.5 V             :         : 7         : N              
+BlatchOut[6]                 : F8        : output : 2.5 V             :         : 8         : N              
+BlatchOut[0]                 : F9        : output : 2.5 V             :         : 7         : N              
 GND                          : F10       : gnd    :                   :         :           :                
 VCCINT                       : F11       : power  :                   : 1.2V    :           :                
 VCCA2                        : F12       : power  :                   : 2.5V    :           :                
-BlatchOut[7]                 : F13       : output : 2.5 V             :         : 6         : N              
-AlatchOut[0]                 : F14       : output : 2.5 V             :         : 6         : N              
-SalidaALU[7]                 : F15       : output : 2.5 V             :         : 6         : N              
+PO0[9]                       : F13       : output : 2.5 V             :         : 6         : N              
+BlatchOut[14]                : F14       : output : 2.5 V             :         : 6         : N              
+AlatchOut[8]                 : F15       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_nCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : F16       : output : 2.5 V             :         : 6         : N              
-PO0[11]                      : G1        : output : 2.5 V             :         : 1         : N              
-WRcurrent[11]                : G2        : output : 2.5 V             :         : 1         : N              
+BlatchOut[5]                 : G1        : output : 2.5 V             :         : 1         : N              
+BlatchOut[11]                : G2        : output : 2.5 V             :         : 1         : N              
 VCCIO1                       : G3        : power  :                   : 2.5V    : 1         :                
 GND                          : G4        : gnd    :                   :         :           :                
-WRcurrent[10]                : G5        : output : 2.5 V             :         : 1         : N              
+SalidaALU[3]                 : G5        : output : 2.5 V             :         : 1         : N              
 VCCINT                       : G6        : power  :                   : 1.2V    :           :                
 VCCINT                       : G7        : power  :                   : 1.2V    :           :                
 VCCINT                       : G8        : power  :                   : 1.2V    :           :                
@@ -179,8 +179,8 @@ GND                          : G11       : gnd    :                   :         
 MSEL2                        : G12       :        :                   :         : 6         :                
 GND                          : G13       : gnd    :                   :         :           :                
 VCCIO6                       : G14       : power  :                   : 2.5V    : 6         :                
-AlatchOut[7]                 : G15       : output : 2.5 V             :         : 6         : N              
-BlatchOut[2]                 : G16       : output : 2.5 V             :         : 6         : N              
+AlatchOut[13]                : G15       : output : 2.5 V             :         : 6         : N              
+busAout[0]                   : G16       : output : 2.5 V             :         : 6         : N              
 ~ALTERA_DCLK~                : H1        : output : 2.5 V             :         : 1         : N              
 ~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : H2        : input  : 2.5 V             :         : 1         : N              
 TCK                          : H3        : input  :                   :         : 1         :                
@@ -197,8 +197,8 @@ MSEL0                        : H13       :        :                   :         
 CONF_DONE                    : H14       :        :                   :         : 6         :                
 GND                          : H15       : gnd    :                   :         :           :                
 GND                          : H16       : gnd    :                   :         :           :                
-BlatchOut[8]                 : J1        : output : 2.5 V             :         : 2         : N              
-busC[2]                      : J2        : output : 2.5 V             :         : 2         : N              
+BlatchOut[10]                : J1        : output : 2.5 V             :         : 2         : N              
+BlatchOut[13]                : J2        : output : 2.5 V             :         : 2         : N              
 nCE                          : J3        :        :                   :         : 1         :                
 TDO                          : J4        : output :                   :         : 1         :                
 TMS                          : J5        : input  :                   :         : 1         :                
@@ -209,15 +209,15 @@ GND                          : J9        : gnd    :                   :         
 GND                          : J10       : gnd    :                   :         :           :                
 GND                          : J11       : gnd    :                   :         :           :                
 VCCINT                       : J12       : power  :                   : 1.2V    :           :                
-AlatchOut[2]                 : J13       : output : 2.5 V             :         : 5         : N              
-BlatchOut[3]                 : J14       : output : 2.5 V             :         : 5         : N              
-BlatchOut[4]                 : J15       : output : 2.5 V             :         : 5         : N              
-BlatchOut[1]                 : J16       : output : 2.5 V             :         : 5         : N              
-busC[4]                      : K1        : output : 2.5 V             :         : 2         : N              
-busC[3]                      : K2        : output : 2.5 V             :         : 2         : N              
+busC[1]                      : J13       : output : 2.5 V             :         : 5         : N              
+busC[3]                      : J14       : output : 2.5 V             :         : 5         : N              
+busAout[1]                   : J15       : output : 2.5 V             :         : 5         : N              
+busAout[4]                   : J16       : output : 2.5 V             :         : 5         : N              
+instruction[0]               : K1        : output : 2.5 V             :         : 2         : N              
+instruction[1]               : K2        : output : 2.5 V             :         : 2         : N              
 VCCIO2                       : K3        : power  :                   : 2.5V    : 2         :                
 GND                          : K4        : gnd    :                   :         :           :                
-PO0[4]                       : K5        : output : 2.5 V             :         : 2         : N              
+instruction[13]              : K5        : output : 2.5 V             :         : 2         : N              
 GND                          : K6        : gnd    :                   :         :           :                
 VCCINT                       : K7        : power  :                   : 1.2V    :           :                
 GND                          : K8        : gnd    :                   :         :           :                
@@ -227,101 +227,101 @@ VCCINT                       : K11       : power  :                   : 1.2V    
 GND                          : K12       : gnd    :                   :         :           :                
 GND                          : K13       : gnd    :                   :         :           :                
 VCCIO5                       : K14       : power  :                   : 2.5V    : 5         :                
-BlatchOut[0]                 : K15       : output : 2.5 V             :         : 5         : N              
-BlatchOut[13]                : K16       : output : 2.5 V             :         : 5         : N              
-busC[0]                      : L1        : output : 2.5 V             :         : 2         : N              
-busC[1]                      : L2        : output : 2.5 V             :         : 2         : N              
-busAout[4]                   : L3        : output : 2.5 V             :         : 2         : N              
-SalidaALU[8]                 : L4        : output : 2.5 V             :         : 2         : N              
+busAout[3]                   : K15       : output : 2.5 V             :         : 5         : N              
+busAout[2]                   : K16       : output : 2.5 V             :         : 5         : N              
+AlatchOut[6]                 : L1        : output : 2.5 V             :         : 2         : N              
+WRcurrent[11]                : L2        : output : 2.5 V             :         : 2         : N              
+PO0[0]                       : L3        : output : 2.5 V             :         : 2         : N              
+busBout[4]                   : L4        : output : 2.5 V             :         : 2         : N              
 VCCA1                        : L5        : power  :                   : 2.5V    :           :                
 VCCINT                       : L6        : power  :                   : 1.2V    :           :                
-regwrite                     : L7        : output : 2.5 V             :         : 3         : N              
-PO0[9]                       : L8        : output : 2.5 V             :         : 3         : N              
+instruction[2]               : L7        : output : 2.5 V             :         : 3         : N              
+instruction[9]               : L8        : output : 2.5 V             :         : 3         : N              
 GND                          : L9        : gnd    :                   :         :           :                
 GND                          : L10       : gnd    :                   :         :           :                
 GND                          : L11       : gnd    :                   :         :           :                
 VCCA4                        : L12       : power  :                   : 2.5V    :           :                
-AlatchOut[14]                : L13       : output : 2.5 V             :         : 5         : N              
-busAout[1]                   : L14       : output : 2.5 V             :         : 5         : N              
-AlatchOut[13]                : L15       : output : 2.5 V             :         : 5         : N              
-AluIn[0]                     : L16       : output : 2.5 V             :         : 5         : N              
+WRcurrent[9]                 : L13       : output : 2.5 V             :         : 5         : N              
+WRcurrent[4]                 : L14       : output : 2.5 V             :         : 5         : N              
+WRwriteout                   : L15       : output : 2.5 V             :         : 5         : N              
+WRcurrent[14]                : L16       : output : 2.5 V             :         : 5         : N              
 GND+                         : M1        :        :                   :         : 2         :                
 GND+                         : M2        :        :                   :         : 2         :                
 VCCIO2                       : M3        : power  :                   : 2.5V    : 2         :                
 GND                          : M4        : gnd    :                   :         :           :                
 GNDA1                        : M5        : gnd    :                   :         :           :                
-busC[5]                      : M6        : output : 2.5 V             :         : 3         : N              
-PO0[6]                       : M7        : output : 2.5 V             :         : 3         : N              
-busBout[0]                   : M8        : output : 2.5 V             :         : 3         : N              
+WRcurrent[0]                 : M6        : output : 2.5 V             :         : 3         : N              
+AlatchOut[11]                : M7        : output : 2.5 V             :         : 3         : N              
+instruction[14]              : M8        : output : 2.5 V             :         : 3         : N              
 VCCINT                       : M9        : power  :                   : 1.2V    :           :                
-BlatchOut[15]                : M10       : output : 2.5 V             :         : 4         : N              
+PO0[14]                      : M10       : output : 2.5 V             :         : 4         : N              
 VCCINT                       : M11       : power  :                   : 1.2V    :           :                
 GNDA4                        : M12       : gnd    :                   :         :           :                
 GND                          : M13       : gnd    :                   :         :           :                
 VCCIO5                       : M14       : power  :                   : 2.5V    : 5         :                
 GND+                         : M15       :        :                   :         : 5         :                
 GND+                         : M16       :        :                   :         : 5         :                
-WRcurrent[1]                 : N1        : output : 2.5 V             :         : 2         : N              
-WRcurrent[4]                 : N2        : output : 2.5 V             :         : 2         : N              
+instruction[3]               : N1        : output : 2.5 V             :         : 2         : N              
+PO0[13]                      : N2        : output : 2.5 V             :         : 2         : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : N3        :        :                   :         : 3         :                
 VCCD_PLL1                    : N4        : power  :                   : 1.2V    :           :                
-PO0[3]                       : N5        : output : 2.5 V             :         : 3         : N              
-SalidaALU[10]                : N6        : output : 2.5 V             :         : 3         : N              
+AlatchOut[3]                 : N5        : output : 2.5 V             :         : 3         : N              
+SalidaALU[7]                 : N6        : output : 2.5 V             :         : 3         : N              
 GND                          : N7        : gnd    :                   :         :           :                
-busAout[2]                   : N8        : output : 2.5 V             :         : 3         : N              
-WRcurrent[2]                 : N9        : output : 2.5 V             :         : 4         : N              
+instruction[12]              : N8        : output : 2.5 V             :         : 3         : N              
+PO0[10]                      : N9        : output : 2.5 V             :         : 4         : N              
 GND                          : N10       : gnd    :                   :         :           :                
-BlatchOut[9]                 : N11       : output : 2.5 V             :         : 4         : N              
-BlatchOut[11]                : N12       : output : 2.5 V             :         : 4         : N              
+PO0[1]                       : N11       : output : 2.5 V             :         : 4         : N              
+busBout[1]                   : N12       : output : 2.5 V             :         : 4         : N              
 VCCD_PLL4                    : N13       : power  :                   : 1.2V    :           :                
-SalidaALU[2]                 : N14       : output : 2.5 V             :         : 5         : N              
-WRcurrent[13]                : N15       : output : 2.5 V             :         : 5         : N              
-SalidaALU[14]                : N16       : output : 2.5 V             :         : 5         : N              
-WRcurrent[12]                : P1        : output : 2.5 V             :         : 2         : N              
-PO0[14]                      : P2        : output : 2.5 V             :         : 2         : N              
-RESERVED_INPUT_WITH_WEAK_PULLUP : P3        :        :                   :         : 3         :                
+WRcurrent[3]                 : N14       : output : 2.5 V             :         : 5         : N              
+busC[0]                      : N15       : output : 2.5 V             :         : 5         : N              
+WRcurrent[5]                 : N16       : output : 2.5 V             :         : 5         : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : P1        :        :                   :         : 2         :                
+RESERVED_INPUT_WITH_WEAK_PULLUP : P2        :        :                   :         : 2         :                
+WRcurrent[6]                 : P3        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P4        : power  :                   : 2.5V    : 3         :                
 GND                          : P5        : gnd    :                   :         :           :                
-PO0[8]                       : P6        : output : 2.5 V             :         : 3         : N              
+PO0[7]                       : P6        : output : 2.5 V             :         : 3         : N              
 VCCIO3                       : P7        : power  :                   : 2.5V    : 3         :                
-busAout[3]                   : P8        : output : 2.5 V             :         : 3         : N              
-SalidaALU[0]                 : P9        : output : 2.5 V             :         : 4         : N              
+instruction[7]               : P8        : output : 2.5 V             :         : 3         : N              
+instruction[23]              : P9        : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : P10       : power  :                   : 2.5V    : 4         :                
-BlatchOut[5]                 : P11       : output : 2.5 V             :         : 4         : N              
+instruction[22]              : P11       : output : 2.5 V             :         : 4         : N              
 GND                          : P12       : gnd    :                   :         :           :                
 VCCIO4                       : P13       : power  :                   : 2.5V    : 4         :                
-SalidaALU[6]                 : P14       : output : 2.5 V             :         : 4         : N              
-SalidaALU[13]                : P15       : output : 2.5 V             :         : 5         : N              
-SalidaALU[9]                 : P16       : output : 2.5 V             :         : 5         : N              
-WRcurrent[9]                 : R1        : output : 2.5 V             :         : 2         : N              
+instruction[10]              : P14       : output : 2.5 V             :         : 4         : N              
+PO0[5]                       : P15       : output : 2.5 V             :         : 5         : N              
+busC[5]                      : P16       : output : 2.5 V             :         : 5         : N              
+WRcurrent[10]                : R1        : output : 2.5 V             :         : 2         : N              
 GND                          : R2        : gnd    :                   :         :           :                
-WRcurrent[6]                 : R3        : output : 2.5 V             :         : 3         : N              
-WRcurrent[7]                 : R4        : output : 2.5 V             :         : 3         : N              
-PO0[15]                      : R5        : output : 2.5 V             :         : 3         : N              
-BlatchOut[10]                : R6        : output : 2.5 V             :         : 3         : N              
-WRcurrent[5]                 : R7        : output : 2.5 V             :         : 3         : N              
+instruction[15]              : R3        : output : 2.5 V             :         : 3         : N              
+AlatchOut[1]                 : R4        : output : 2.5 V             :         : 3         : N              
+instruction[5]               : R5        : output : 2.5 V             :         : 3         : N              
+instruction[16]              : R6        : output : 2.5 V             :         : 3         : N              
+WRread                       : R7        : output : 2.5 V             :         : 3         : N              
 GND+                         : R8        :        :                   :         : 3         :                
 GND+                         : R9        :        :                   :         : 4         :                
-PO0[0]                       : R10       : output : 2.5 V             :         : 4         : N              
-AluIn[2]                     : R11       : output : 2.5 V             :         : 4         : N              
-WRcurrent[0]                 : R12       : output : 2.5 V             :         : 4         : N              
-busBout[1]                   : R13       : output : 2.5 V             :         : 4         : N              
-WRcurrent[3]                 : R14       : output : 2.5 V             :         : 4         : N              
+instruction[6]               : R10       : output : 2.5 V             :         : 4         : N              
+instruction[21]              : R11       : output : 2.5 V             :         : 4         : N              
+instruction[4]               : R12       : output : 2.5 V             :         : 4         : N              
+WRcurrent[13]                : R13       : output : 2.5 V             :         : 4         : N              
+busBout[5]                   : R14       : output : 2.5 V             :         : 4         : N              
 GND                          : R15       : gnd    :                   :         :           :                
-AlatchOut[15]                : R16       : output : 2.5 V             :         : 5         : N              
+PO0[15]                      : R16       : output : 2.5 V             :         : 5         : N              
 VCCIO3                       : T1        : power  :                   : 2.5V    : 3         :                
-PO0[1]                       : T2        : output : 2.5 V             :         : 3         : N              
-busBout[2]                   : T3        : output : 2.5 V             :         : 3         : N              
-SalidaALU[5]                 : T4        : output : 2.5 V             :         : 3         : N              
-PO0[5]                       : T5        : output : 2.5 V             :         : 3         : N              
-WRwriteout                   : T6        : output : 2.5 V             :         : 3         : N              
-WRcurrent[8]                 : T7        : output : 2.5 V             :         : 3         : N              
+instruction[18]              : T2        : output : 2.5 V             :         : 3         : N              
+busBout[3]                   : T3        : output : 2.5 V             :         : 3         : N              
+AlatchOut[4]                 : T4        : output : 2.5 V             :         : 3         : N              
+instruction[8]               : T5        : output : 2.5 V             :         : 3         : N              
+PO0[3]                       : T6        : output : 2.5 V             :         : 3         : N              
+instruction[17]              : T7        : output : 2.5 V             :         : 3         : N              
 GND+                         : T8        :        :                   :         : 3         :                
 GND+                         : T9        :        :                   :         : 4         :                
-AlatchOut[12]                : T10       : output : 2.5 V             :         : 4         : N              
-busAout[0]                   : T11       : output : 2.5 V             :         : 4         : N              
-AlatchOut[11]                : T12       : output : 2.5 V             :         : 4         : N              
-busBout[5]                   : T13       : output : 2.5 V             :         : 4         : N              
-SalidaALU[12]                : T14       : output : 2.5 V             :         : 4         : N              
-SalidaALU[11]                : T15       : output : 2.5 V             :         : 4         : N              
+instruction[19]              : T10       : output : 2.5 V             :         : 4         : N              
+instruction[20]              : T11       : output : 2.5 V             :         : 4         : N              
+instruction[11]              : T12       : output : 2.5 V             :         : 4         : N              
+PO0[2]                       : T13       : output : 2.5 V             :         : 4         : N              
+busC[2]                      : T14       : output : 2.5 V             :         : 4         : N              
+PO0[11]                      : T15       : output : 2.5 V             :         : 4         : N              
 VCCIO4                       : T16       : power  :                   : 2.5V    : 4         :                

@@ -3,63 +3,51 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk0'
-Slack : -41.079
-TNS   : -998.773
+Slack : -40.210
+TNS   : -968.829
 
 Type  : Slow 1200mV 85C Model Setup 'EFF32:OperandStage|Q[5]'
-Slack : -5.762
-TNS   : -149.890
+Slack : -6.098
+TNS   : -131.737
 
-Type  : Slow 1200mV 85C Model Setup 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : -2.207
-TNS   : -16.940
+Type  : Slow 1200mV 85C Model Setup 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : -2.942
+TNS   : -62.774
 
-Type  : Slow 1200mV 85C Model Setup 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : -1.778
-TNS   : -402.437
+Type  : Slow 1200mV 85C Model Setup 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : -2.723
+TNS   : -338.115
 
-Type  : Slow 1200mV 85C Model Setup 'clk1'
-Slack : -0.390
-TNS   : -0.506
-
-Type  : Slow 1200mV 85C Model Hold 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : -0.282
-TNS   : -2.066
+Type  : Slow 1200mV 85C Model Hold 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : -0.311
+TNS   : -3.575
 
 Type  : Slow 1200mV 85C Model Hold 'EFF32:OperandStage|Q[5]'
-Slack : 0.082
+Slack : -0.221
+TNS   : -0.221
+
+Type  : Slow 1200mV 85C Model Hold 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : 0.262
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'clk0'
-Slack : 0.328
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'clk1'
-Slack : 0.437
-TNS   : 0.000
-
-Type  : Slow 1200mV 85C Model Hold 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : 0.567
+Slack : 0.290
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk0'
 Slack : -3.000
-TNS   : -203.524
+TNS   : -207.524
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk1'
-Slack : -3.000
-TNS   : -7.000
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : 0.319
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : 0.271
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : 0.360
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : 0.377
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'EFF32:OperandStage|Q[5]'
-Slack : 0.407
+Slack : 0.380
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_input'
@@ -67,63 +55,51 @@ Slack : 4.835
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk0'
-Slack : -36.639
-TNS   : -880.386
+Slack : -35.861
+TNS   : -851.429
 
 Type  : Slow 1200mV 0C Model Setup 'EFF32:OperandStage|Q[5]'
-Slack : -5.115
-TNS   : -132.913
+Slack : -5.358
+TNS   : -114.626
 
-Type  : Slow 1200mV 0C Model Setup 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : -1.945
-TNS   : -14.808
+Type  : Slow 1200mV 0C Model Setup 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : -2.623
+TNS   : -53.703
 
-Type  : Slow 1200mV 0C Model Setup 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : -1.533
-TNS   : -316.416
-
-Type  : Slow 1200mV 0C Model Setup 'clk1'
-Slack : -0.249
-TNS   : -0.249
-
-Type  : Slow 1200mV 0C Model Hold 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : -0.209
-TNS   : -0.931
+Type  : Slow 1200mV 0C Model Setup 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : -2.421
+TNS   : -294.971
 
 Type  : Slow 1200mV 0C Model Hold 'EFF32:OperandStage|Q[5]'
-Slack : 0.117
+Slack : -0.151
+TNS   : -0.151
+
+Type  : Slow 1200mV 0C Model Hold 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : -0.136
+TNS   : -0.413
+
+Type  : Slow 1200mV 0C Model Hold 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : 0.250
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'clk0'
-Slack : 0.312
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'clk1'
-Slack : 0.391
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Hold 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : 0.571
+Slack : 0.287
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk0'
 Slack : -3.000
-TNS   : -203.524
+TNS   : -207.524
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk1'
-Slack : -3.000
-TNS   : -7.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : 0.384
-TNS   : 0.000
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : 0.418
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : 0.387
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'EFF32:OperandStage|Q[5]'
-Slack : 0.434
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : 0.443
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_input'
@@ -131,63 +107,51 @@ Slack : 4.818
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk0'
-Slack : -23.035
-TNS   : -501.482
+Slack : -22.478
+TNS   : -483.823
 
 Type  : Fast 1200mV 0C Model Setup 'EFF32:OperandStage|Q[5]'
-Slack : -3.125
-TNS   : -79.877
+Slack : -3.269
+TNS   : -65.719
 
-Type  : Fast 1200mV 0C Model Setup 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : -1.061
-TNS   : -4.893
+Type  : Fast 1200mV 0C Model Setup 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : -1.555
+TNS   : -20.379
 
-Type  : Fast 1200mV 0C Model Setup 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : -0.987
-TNS   : -42.459
+Type  : Fast 1200mV 0C Model Setup 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : -1.413
+TNS   : -47.581
 
-Type  : Fast 1200mV 0C Model Setup 'clk1'
-Slack : 0.193
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : -0.200
-TNS   : -7.323
+Type  : Fast 1200mV 0C Model Hold 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : -0.227
+TNS   : -2.775
 
 Type  : Fast 1200mV 0C Model Hold 'EFF32:OperandStage|Q[5]'
-Slack : 0.038
+Slack : -0.144
+TNS   : -0.144
+
+Type  : Fast 1200mV 0C Model Hold 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : 0.092
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'clk0'
-Slack : 0.163
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'clk1'
-Slack : 0.200
-TNS   : 0.000
-
-Type  : Fast 1200mV 0C Model Hold 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : 0.415
+Slack : 0.139
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk0'
 Slack : -3.000
-TNS   : -183.939
+TNS   : -188.569
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk1'
-Slack : -3.000
-TNS   : -7.228
-
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a2'
-Slack : 0.264
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a1'
+Slack : 0.180
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
-Slack : 0.318
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ram_block3a0'
+Slack : 0.325
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'EFF32:OperandStage|Q[5]'
-Slack : 0.399
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_input'

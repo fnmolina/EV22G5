@@ -1,8 +1,6 @@
 module MIR 
     (   input wire  clk,
         input [23:0] IR, //Instruction
-		output reg [23:0] indexOut,
-		output reg [23:0] groupOut,
         output reg [32:0] MIR); //Microinstruction 
 
 
@@ -98,24 +96,18 @@ module MIR
 				//MIR = (aux & 24'h000fff);            //get memory/program address
                 index = (aux & 24'h0ff000) >> 12;     //get instruction index 
                 //MIR <= MIR | ROM0[index]; 
-				MIR <= ROM0[index]; 
-				indexOut <= index;
-				groupOut <= group;
+					 MIR <= ROM0[index]; 
 			end
 			ROM1index:	//Pareciera estar OK
 			begin
                 index = (aux & 24'h0f0000) >> 16;     //get instruction index 
                 MIR <= ROM1[index]; 
-				indexOut <= index;
-				groupOut <= group;
 			end
 			ROM2index:	//OK
 			begin
                 MIR = (IR & 24'h00001f);            //get register index A bus
                 index = (IR & 24'h0fffe0) >> 5;     //get instruction index 
                 MIR <= MIR | ROM2[index];  
-				indexOut <= index;
-				groupOut <= group;
 			end
 			ROM3index: 	//OK
 			begin
@@ -123,15 +115,11 @@ module MIR
                 MIR = MIR | ((IR & 24'h0003e0) << 7);  //get register index C bus 
                 index = (IR & 24'h0ffc00) >> 10;        //get instruction index 
                 MIR <= MIR | ROM3[index];  
-				indexOut <= index;
-				groupOut <= group;
 			end
 			ROM4index:
 			begin		//Pareciera estar OK
                 index = (aux & 24'h07ffff);        //get instruction index 
                 MIR <= ROM4[index];  
-				indexOut <= index;
-				groupOut <= group;
 			end
 			default:
 				MIR <= 33'b000000000100011100011010000000000;	//NOP

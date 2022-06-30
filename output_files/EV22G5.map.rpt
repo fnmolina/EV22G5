@@ -1,5 +1,5 @@
 Analysis & Synthesis report for EV22G5
-Thu Jun 30 15:56:06 2022
+Thu Jun 30 17:18:17 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -23,14 +23,14 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
  16. Source assignments for PROGRAM:program|altsyncram:altsyncram_component|altsyncram_57a1:auto_generated
  17. Source assignments for DATA:inst3|altsyncram:altsyncram_component|altsyncram_2jf1:auto_generated
- 18. Source assignments for MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2
+ 18. Source assignments for MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2
  19. Parameter Settings for User Entity Instance: PLL:pll|altpll:altpll_component
- 20. Parameter Settings for User Entity Instance: MIR:inst5
+ 20. Parameter Settings for User Entity Instance: MIR:inst1
  21. Parameter Settings for User Entity Instance: PROGRAM:program|altsyncram:altsyncram_component
  22. Parameter Settings for User Entity Instance: alu:alu
  23. Parameter Settings for User Entity Instance: RB:inst8
  24. Parameter Settings for User Entity Instance: DATA:inst3|altsyncram:altsyncram_component
- 25. Parameter Settings for Inferred Entity Instance: MIR:inst5|altshift_taps:MIR_rtl_0
+ 25. Parameter Settings for Inferred Entity Instance: MIR:inst1|altshift_taps:MIR_rtl_0
  26. Parameter Settings for Inferred Entity Instance: alu:alu|lpm_divide:Mod0
  27. altpll Parameter Settings by Entity Instance
  28. altsyncram Parameter Settings by Entity Instance
@@ -65,13 +65,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jun 30 15:56:06 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jun 30 17:18:17 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; EV22G5                                      ;
 ; Top-level Entity Name              ; EV22G5                                      ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,660                                       ;
-;     Total combinational functions  ; 1,557                                       ;
+; Total logic elements               ; 1,662                                       ;
+;     Total combinational functions  ; 1,559                                       ;
 ;     Dedicated logic registers      ; 148                                         ;
 ; Total registers                    ; 148                                         ;
 ; Total pins                         ; 133                                         ;
@@ -181,7 +181,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.1%      ;
+;     Processor 2            ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -245,16 +245,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 1,660      ;
+; Estimated Total logic elements              ; 1,662      ;
 ;                                             ;            ;
-; Total combinational functions               ; 1557       ;
+; Total combinational functions               ; 1559       ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 655        ;
-;     -- 3 input functions                    ; 835        ;
-;     -- <=2 input functions                  ; 67         ;
+;     -- 4 input functions                    ; 660        ;
+;     -- 3 input functions                    ; 829        ;
+;     -- <=2 input functions                  ; 70         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 1391       ;
+;     -- normal mode                          ; 1393       ;
 ;     -- arithmetic mode                      ; 166        ;
 ;                                             ;            ;
 ; Total registers                             ; 148        ;
@@ -270,9 +270,9 @@ https://fpgasoftware.intel.com/eula.
 ;     -- PLLs                                 ; 1          ;
 ;                                             ;            ;
 ; Maximum fan-out node                        ; clk0~input ;
-; Maximum fan-out                             ; 176        ;
-; Total fan-out                               ; 6161       ;
-; Average fan-out                             ; 3.07       ;
+; Maximum fan-out                             ; 180        ;
+; Total fan-out                               ; 6169       ;
+; Average fan-out                             ; 3.08       ;
 +---------------------------------------------+------------+
 
 
@@ -281,30 +281,30 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 ; Compilation Hierarchy Node                ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                   ; Entity Name         ; Library Name ;
 +-------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |EV22G5                                   ; 1557 (0)            ; 148 (0)                   ; 98320       ; 0            ; 0       ; 0         ; 133  ; 0            ; |EV22G5                                                                                                                               ; EV22G5              ; work         ;
+; |EV22G5                                   ; 1559 (0)            ; 148 (0)                   ; 98320       ; 0            ; 0       ; 0         ; 133  ; 0            ; |EV22G5                                                                                                                               ; EV22G5              ; work         ;
 ;    |EFF16:ff1|                            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF16:ff1                                                                                                                     ; EFF16               ; work         ;
 ;    |EFF16:ff2|                            ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF16:ff2                                                                                                                     ; EFF16               ; work         ;
-;    |EFF16:inst|                           ; 0 (0)               ; 16 (16)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF16:inst                                                                                                                    ; EFF16               ; work         ;
+;    |EFF16:inst|                           ; 0 (0)               ; 15 (15)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF16:inst                                                                                                                    ; EFF16               ; work         ;
 ;    |EFF24:InstReg|                        ; 0 (0)               ; 24 (24)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF24:InstReg                                                                                                                 ; EFF24               ; work         ;
 ;    |EFF32:OperandStage|                   ; 0 (0)               ; 14 (14)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF32:OperandStage                                                                                                            ; EFF32               ; work         ;
-;    |EFF32:ffalu|                          ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF32:ffalu                                                                                                                   ; EFF32               ; work         ;
-;    |MIR:inst5|                            ; 83 (82)             ; 15 (14)                   ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst5                                                                                                                     ; MIR                 ; work         ;
-;       |altshift_taps:MIR_rtl_0|           ; 1 (0)               ; 1 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst5|altshift_taps:MIR_rtl_0                                                                                             ; altshift_taps       ; work         ;
-;          |shift_taps_u4m:auto_generated|  ; 1 (0)               ; 1 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated                                                               ; shift_taps_u4m      ; work         ;
-;             |altsyncram_0b81:altsyncram2| ; 0 (0)               ; 0 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2                                   ; altsyncram_0b81     ; work         ;
-;             |cntr_4pf:cntr1|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|cntr_4pf:cntr1                                                ; cntr_4pf            ; work         ;
+;    |EFF32:exeStage|                       ; 0 (0)               ; 4 (4)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|EFF32:exeStage                                                                                                                ; EFF32               ; work         ;
+;    |MIR:inst1|                            ; 83 (82)             ; 15 (14)                   ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst1                                                                                                                     ; MIR                 ; work         ;
+;       |altshift_taps:MIR_rtl_0|           ; 1 (0)               ; 1 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst1|altshift_taps:MIR_rtl_0                                                                                             ; altshift_taps       ; work         ;
+;          |shift_taps_u4m:auto_generated|  ; 1 (0)               ; 1 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated                                                               ; shift_taps_u4m      ; work         ;
+;             |altsyncram_0b81:altsyncram2| ; 0 (0)               ; 0 (0)                     ; 16          ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2                                   ; altsyncram_0b81     ; work         ;
+;             |cntr_4pf:cntr1|              ; 1 (1)               ; 1 (1)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|cntr_4pf:cntr1                                                ; cntr_4pf            ; work         ;
 ;    |PLL:pll|                              ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|PLL:pll                                                                                                                       ; PLL                 ; work         ;
 ;       |altpll:altpll_component|           ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|PLL:pll|altpll:altpll_component                                                                                               ; altpll              ; work         ;
 ;          |PLL_altpll:auto_generated|      ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated                                                                     ; PLL_altpll          ; work         ;
 ;    |PROGRAM:program|                      ; 0 (0)               ; 0 (0)                     ; 98304       ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|PROGRAM:program                                                                                                               ; PROGRAM             ; work         ;
 ;       |altsyncram:altsyncram_component|   ; 0 (0)               ; 0 (0)                     ; 98304       ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|PROGRAM:program|altsyncram:altsyncram_component                                                                               ; altsyncram          ; work         ;
 ;          |altsyncram_57a1:auto_generated| ; 0 (0)               ; 0 (0)                     ; 98304       ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|PROGRAM:program|altsyncram:altsyncram_component|altsyncram_57a1:auto_generated                                                ; altsyncram_57a1     ; work         ;
-;    |RB:inst8|                             ; 1005 (1005)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|RB:inst8                                                                                                                      ; RB                  ; work         ;
-;    |alu:alu|                              ; 380 (83)            ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu                                                                                                                       ; alu                 ; work         ;
-;       |lpm_divide:Mod0|                   ; 297 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0                                                                                                       ; lpm_divide          ; work         ;
-;          |lpm_divide_ocm:auto_generated|  ; 297 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0|lpm_divide_ocm:auto_generated                                                                         ; lpm_divide_ocm      ; work         ;
-;             |sign_div_unsign_dnh:divider| ; 297 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0|lpm_divide_ocm:auto_generated|sign_div_unsign_dnh:divider                                             ; sign_div_unsign_dnh ; work         ;
-;                |alt_u_div_eaf:divider|    ; 297 (296)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0|lpm_divide_ocm:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_eaf:divider                       ; alt_u_div_eaf       ; work         ;
+;    |RB:inst8|                             ; 1004 (1004)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|RB:inst8                                                                                                                      ; RB                  ; work         ;
+;    |alu:alu|                              ; 383 (84)            ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu                                                                                                                       ; alu                 ; work         ;
+;       |lpm_divide:Mod0|                   ; 299 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0                                                                                                       ; lpm_divide          ; work         ;
+;          |lpm_divide_ocm:auto_generated|  ; 299 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0|lpm_divide_ocm:auto_generated                                                                         ; lpm_divide_ocm      ; work         ;
+;             |sign_div_unsign_dnh:divider| ; 299 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0|lpm_divide_ocm:auto_generated|sign_div_unsign_dnh:divider                                             ; sign_div_unsign_dnh ; work         ;
+;                |alt_u_div_eaf:divider|    ; 299 (298)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0|lpm_divide_ocm:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_eaf:divider                       ; alt_u_div_eaf       ; work         ;
 ;                   |add_sub_8pc:add_sub_1| ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|alu:alu|lpm_divide:Mod0|lpm_divide_ocm:auto_generated|sign_div_unsign_dnh:divider|alt_u_div_eaf:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc         ; work         ;
 ;    |mux_k:muxK|                           ; 16 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|mux_k:muxK                                                                                                                    ; mux_k               ; work         ;
 ;    |pc:pc|                                ; 73 (73)             ; 26 (26)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |EV22G5|pc:pc                                                                                                                         ; pc                  ; work         ;
@@ -317,7 +317,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-------------+
 ; Name                                                                                                   ; Type ; Mode             ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size  ; MIF         ;
 +--------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-------------+
-; MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 2            ; 8            ; 2            ; 8            ; 16    ; None        ;
+; MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2|ALTSYNCRAM ; AUTO ; Simple Dual Port ; 2            ; 8            ; 2            ; 8            ; 16    ; None        ;
 ; PROGRAM:program|altsyncram:altsyncram_component|altsyncram_57a1:auto_generated|ALTSYNCRAM              ; AUTO ; ROM              ; 4096         ; 24           ; --           ; --           ; 98304 ; PROGRAM.hex ;
 +--------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+-------+-------------+
 
@@ -338,70 +338,70 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------------------------------------------------------+--------------------------+------------------------+
 ; Latch Name                                           ; Latch Enable Signal      ; Free of Timing Hazards ;
 +------------------------------------------------------+--------------------------+------------------------+
-; RB:inst8|A[15]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[14]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[13]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[12]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[11]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[10]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[9]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[8]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[7]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[6]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[5]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[4]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[3]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[2]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[1]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|A[0]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[15]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[14]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[13]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[12]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[11]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[10]                                       ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[9]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[8]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[7]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[6]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[5]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[4]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[3]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[2]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[1]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|B[0]                                        ; RB:inst8|always1         ; yes                    ;
-; RB:inst8|PO0[15]                                     ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[14]                                     ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[13]                                     ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[12]                                     ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[11]                                     ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[10]                                     ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[9]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[8]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[7]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[6]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[5]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[4]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[3]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[2]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[1]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|PO0[0]                                      ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[15]                               ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[14]                               ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[13]                               ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[12]                               ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[11]                               ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[10]                               ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[9]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[8]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[7]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[6]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[5]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[4]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[3]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[2]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[1]                                ; RB:inst8|Equal0          ; yes                    ;
-; RB:inst8|WRcurrent[0]                                ; RB:inst8|Equal0          ; yes                    ;
+; RB:inst8|A[15]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[14]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[13]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[12]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[11]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[10]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[9]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[8]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[7]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[6]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[5]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[4]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[3]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[2]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[1]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|A[0]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[15]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[14]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[13]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[12]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[11]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[10]                                       ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[9]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[8]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[7]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[6]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[5]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[4]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[3]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[2]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[1]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|B[0]                                        ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[15]                                     ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[14]                                     ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[13]                                     ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[12]                                     ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[11]                                     ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[10]                                     ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[9]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[8]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[7]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[6]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[5]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[4]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[3]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[2]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[1]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|PO0[0]                                      ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[15]                               ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[14]                               ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[13]                               ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[12]                               ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[11]                               ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[10]                               ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[9]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[8]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[7]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[6]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[5]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[4]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[3]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[2]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[1]                                ; RB:inst8|always0         ; yes                    ;
+; RB:inst8|WRcurrent[0]                                ; RB:inst8|always0         ; yes                    ;
 ; RB:inst8|Register[10][15]                            ; RB:inst8|Register[10][0] ; yes                    ;
 ; RB:inst8|Register[9][15]                             ; RB:inst8|Register[9][0]  ; yes                    ;
 ; RB:inst8|Register[8][15]                             ; RB:inst8|Register[8][0]  ; yes                    ;
@@ -449,15 +449,15 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; Register name                          ; Reason for Removal                     ;
 +----------------------------------------+----------------------------------------+
 ; EFF32:OperandStage|Q[24]               ; Lost fanout                            ;
-; MIR:inst5|MIR[24]                      ; Lost fanout                            ;
+; MIR:inst1|MIR[24]                      ; Lost fanout                            ;
 ; alu:alu|CCR[0]                         ; Stuck at GND due to stuck port data_in ;
 ; UCtest:uctest|hold                     ; Stuck at VCC due to stuck port data_in ;
-; MIR:inst5|MIR[20..22,27,28]            ; Stuck at GND due to stuck port data_in ;
+; MIR:inst1|MIR[20..22,27,28]            ; Stuck at GND due to stuck port data_in ;
 ; EFF32:OperandStage|Q[20..22,27,28]     ; Stuck at GND due to stuck port data_in ;
-; EFF32:ffalu|Q[27,28]                   ; Stuck at GND due to stuck port data_in ;
-; MIR:inst5|MIR[19]                      ; Merged with MIR:inst5|MIR[23]          ;
+; EFF32:exeStage|Q[27,28]                ; Stuck at GND due to stuck port data_in ;
+; MIR:inst1|MIR[19]                      ; Merged with MIR:inst1|MIR[23]          ;
+; EFF16:inst|Q[15]                       ; Merged with alu:alu|CCR[3]             ;
 ; EFF32:OperandStage|Q[19]               ; Merged with EFF32:OperandStage|Q[23]   ;
-; alu:alu|CCR[3]                         ; Merged with EFF16:inst|Q[15]           ;
 ; Total Number of Removed Registers = 19 ;                                        ;
 +----------------------------------------+----------------------------------------+
 
@@ -468,9 +468,9 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; Register name            ; Reason for Removal        ; Registers Removed due to This Register                                        ;
 +--------------------------+---------------------------+-------------------------------------------------------------------------------+
 ; UCtest:uctest|hold       ; Stuck at VCC              ; EFF32:OperandStage|Q[28], EFF32:OperandStage|Q[27], EFF32:OperandStage|Q[22], ;
-;                          ; due to stuck port data_in ; EFF32:OperandStage|Q[21], EFF32:OperandStage|Q[20], EFF32:ffalu|Q[28],        ;
-;                          ;                           ; EFF32:ffalu|Q[27]                                                             ;
-; EFF32:OperandStage|Q[24] ; Lost Fanouts              ; MIR:inst5|MIR[24]                                                             ;
+;                          ; due to stuck port data_in ; EFF32:OperandStage|Q[21], EFF32:OperandStage|Q[20], EFF32:exeStage|Q[28],     ;
+;                          ;                           ; EFF32:exeStage|Q[27]                                                          ;
+; EFF32:OperandStage|Q[24] ; Lost Fanouts              ; MIR:inst1|MIR[24]                                                             ;
 +--------------------------+---------------------------+-------------------------------------------------------------------------------+
 
 
@@ -494,10 +494,10 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 +----------------------------------+---------------------+------------+
 ; Register Name                    ; Megafunction        ; Type       ;
 +----------------------------------+---------------------+------------+
-; EFF32:RetireStage|Q[6,8,12..17]  ; MIR:inst5|MIR_rtl_0 ; SHIFT_TAPS ;
-; EFF32:exeStage|Q[6,8,12..17]     ; MIR:inst5|MIR_rtl_0 ; SHIFT_TAPS ;
-; EFF32:OperandStage|Q[6,8,12..17] ; MIR:inst5|MIR_rtl_0 ; SHIFT_TAPS ;
-; MIR:inst5|MIR[6,8,12..17]        ; MIR:inst5|MIR_rtl_0 ; SHIFT_TAPS ;
+; EFF32:RetireStage|Q[6,8,12..17]  ; MIR:inst1|MIR_rtl_0 ; SHIFT_TAPS ;
+; EFF32:exeStage|Q[6,8,12..17]     ; MIR:inst1|MIR_rtl_0 ; SHIFT_TAPS ;
+; EFF32:OperandStage|Q[6,8,12..17] ; MIR:inst1|MIR_rtl_0 ; SHIFT_TAPS ;
+; MIR:inst1|MIR[6,8,12..17]        ; MIR:inst1|MIR_rtl_0 ; SHIFT_TAPS ;
 +----------------------------------+---------------------+------------+
 
 
@@ -507,12 +507,12 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
 ; 16:1               ; 16 bits   ; 160 LEs       ; 80 LEs               ; 80 LEs                 ; Yes        ; |EV22G5|alu:alu|c_out[15]    ;
-; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |EV22G5|MIR:inst5|MIR[3]     ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |EV22G5|MIR:inst5|MIR[29]    ;
-; 12:1               ; 12 bits   ; 96 LEs        ; 24 LEs               ; 72 LEs                 ; Yes        ; |EV22G5|pc:pc|pc_output[7]   ;
+; 6:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |EV22G5|MIR:inst1|MIR[3]     ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |EV22G5|MIR:inst1|MIR[29]    ;
+; 12:1               ; 12 bits   ; 96 LEs        ; 24 LEs               ; 72 LEs                 ; Yes        ; |EV22G5|pc:pc|pc_output[8]   ;
 ; 8:1                ; 16 bits   ; 80 LEs        ; 80 LEs               ; 0 LEs                  ; No         ; |EV22G5|RB:inst8|Mux13       ;
 ; 32:1               ; 16 bits   ; 336 LEs       ; 336 LEs              ; 0 LEs                  ; No         ; |EV22G5|RB:inst8|Mux22       ;
-; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |EV22G5|MIR:inst5|Selector23 ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |EV22G5|MIR:inst1|Selector23 ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+------------------------------+
 
 
@@ -535,7 +535,7 @@ Table restricted to first 100 entries. Note: All latches listed above may not be
 
 
 +--------------------------------------------------------------------------------------------------------------------+
-; Source assignments for MIR:inst5|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2 ;
+; Source assignments for MIR:inst1|altshift_taps:MIR_rtl_0|shift_taps_u4m:auto_generated|altsyncram_0b81:altsyncram2 ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
 ; Assignment                      ; Value              ; From ; To                                                   ;
 +---------------------------------+--------------------+------+------------------------------------------------------+
@@ -918,7 +918,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: MIR:inst5      ;
+; Parameter Settings for User Entity Instance: MIR:inst1      ;
 +----------------+--------------------------+-----------------+
 ; Parameter Name ; Value                    ; Type            ;
 +----------------+--------------------------+-----------------+
@@ -1086,7 +1086,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: MIR:inst5|altshift_taps:MIR_rtl_0 ;
+; Parameter Settings for Inferred Entity Instance: MIR:inst1|altshift_taps:MIR_rtl_0 ;
 +----------------+----------------+--------------------------------------------------+
 ; Parameter Name ; Value          ; Type                                             ;
 +----------------+----------------+--------------------------------------------------+
@@ -1177,7 +1177,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Name                       ; Value                             ;
 +----------------------------+-----------------------------------+
 ; Number of entity instances ; 1                                 ;
-; Entity Instance            ; MIR:inst5|altshift_taps:MIR_rtl_0 ;
+; Entity Instance            ; MIR:inst1|altshift_taps:MIR_rtl_0 ;
 ;     -- NUMBER_OF_TAPS      ; 1                                 ;
 ;     -- TAP_DISTANCE        ; 4                                 ;
 ;     -- WIDTH               ; 8                                 ;
@@ -1193,21 +1193,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; cycloneiii_ff         ; 148                         ;
 ;     ENA               ; 40                          ;
 ;     plain             ; 108                         ;
-; cycloneiii_lcell_comb ; 1558                        ;
+; cycloneiii_lcell_comb ; 1560                        ;
 ;     arith             ; 166                         ;
 ;         2 data inputs ; 22                          ;
 ;         3 data inputs ; 144                         ;
-;     normal            ; 1392                        ;
+;     normal            ; 1394                        ;
 ;         0 data inputs ; 15                          ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 28                          ;
-;         3 data inputs ; 691                         ;
-;         4 data inputs ; 655                         ;
+;         2 data inputs ; 31                          ;
+;         3 data inputs ; 685                         ;
+;         4 data inputs ; 660                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 32                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 49.90                       ;
-; Average LUT depth     ; 13.01                       ;
+; Average LUT depth     ; 13.04                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1216,7 +1216,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:06     ;
+; Top            ; 00:00:05     ;
 +----------------+--------------+
 
 
@@ -1226,7 +1226,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Jun 30 15:55:51 2022
+    Info: Processing started: Thu Jun 30 17:18:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off EV22G5 -c EV22G5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1269,7 +1269,6 @@ Info (12021): Found 1 design units, including 1 entities, in source file data.v
     Info (12023): Found entity 1: DATA File: D:/intelFPGA/Projects/EV22G5/DATA.v Line: 40
 Info (12127): Elaborating entity "EV22G5" for the top level hierarchy
 Warning (275011): Block or symbol "EFF24" of instance "InstReg" overlaps another block or symbol
-Warning (275011): Block or symbol "elatch16" of instance "LATCHB" overlaps another block or symbol
 Info (12128): Elaborating entity "PLL" for hierarchy "PLL:pll"
 Info (12128): Elaborating entity "altpll" for hierarchy "PLL:pll|altpll:altpll_component" File: D:/intelFPGA/Projects/EV22G5/PLL.v Line: 116
 Info (12130): Elaborated megafunction instantiation "PLL:pll|altpll:altpll_component" File: D:/intelFPGA/Projects/EV22G5/PLL.v Line: 116
@@ -1344,25 +1343,25 @@ Info (12133): Instantiated megafunction "PLL:pll|altpll:altpll_component" with t
 Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
     Info (12023): Found entity 1: PLL_altpll File: D:/intelFPGA/Projects/EV22G5/db/pll_altpll.v Line: 31
 Info (12128): Elaborating entity "PLL_altpll" for hierarchy "PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated" File: d:/intelfpga/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
-Info (12128): Elaborating entity "EFF32" for hierarchy "EFF32:OperandStage"
+Info (12128): Elaborating entity "EFF32" for hierarchy "EFF32:RetireStage"
 Info (12128): Elaborating entity "UCtest" for hierarchy "UCtest:uctest"
-Info (12128): Elaborating entity "MIR" for hierarchy "MIR:inst5"
-Info (10264): Verilog HDL Case Statement information at MIR.v(95): all case item expressions in this case statement are onehot File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 95
-Warning (10030): Net "ROM0.data_a" at MIR.v(9) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
-Warning (10030): Net "ROM0.waddr_a" at MIR.v(9) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
-Warning (10030): Net "ROM1.data_a" at MIR.v(10) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
-Warning (10030): Net "ROM1.waddr_a" at MIR.v(10) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
-Warning (10030): Net "ROM2.data_a" at MIR.v(11) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
-Warning (10030): Net "ROM2.waddr_a" at MIR.v(11) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
-Warning (10030): Net "ROM3.data_a" at MIR.v(12) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 12
-Warning (10030): Net "ROM3.waddr_a" at MIR.v(12) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 12
-Warning (10030): Net "ROM4.data_a" at MIR.v(13) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 13
-Warning (10030): Net "ROM4.waddr_a" at MIR.v(13) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 13
-Warning (10030): Net "ROM0.we_a" at MIR.v(9) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
-Warning (10030): Net "ROM1.we_a" at MIR.v(10) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
-Warning (10030): Net "ROM2.we_a" at MIR.v(11) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
-Warning (10030): Net "ROM3.we_a" at MIR.v(12) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 12
-Warning (10030): Net "ROM4.we_a" at MIR.v(13) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 13
+Info (12128): Elaborating entity "MIR" for hierarchy "MIR:inst1"
+Info (10264): Verilog HDL Case Statement information at MIR.v(93): all case item expressions in this case statement are onehot File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 93
+Warning (10030): Net "ROM0.data_a" at MIR.v(7) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 7
+Warning (10030): Net "ROM0.waddr_a" at MIR.v(7) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 7
+Warning (10030): Net "ROM1.data_a" at MIR.v(8) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 8
+Warning (10030): Net "ROM1.waddr_a" at MIR.v(8) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 8
+Warning (10030): Net "ROM2.data_a" at MIR.v(9) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
+Warning (10030): Net "ROM2.waddr_a" at MIR.v(9) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
+Warning (10030): Net "ROM3.data_a" at MIR.v(10) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
+Warning (10030): Net "ROM3.waddr_a" at MIR.v(10) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
+Warning (10030): Net "ROM4.data_a" at MIR.v(11) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
+Warning (10030): Net "ROM4.waddr_a" at MIR.v(11) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
+Warning (10030): Net "ROM0.we_a" at MIR.v(7) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 7
+Warning (10030): Net "ROM1.we_a" at MIR.v(8) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 8
+Warning (10030): Net "ROM2.we_a" at MIR.v(9) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
+Warning (10030): Net "ROM3.we_a" at MIR.v(10) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
+Warning (10030): Net "ROM4.we_a" at MIR.v(11) has no driver or initial value, using a default initial value '0' File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
 Info (12128): Elaborating entity "EFF24" for hierarchy "EFF24:InstReg"
 Info (12128): Elaborating entity "PROGRAM" for hierarchy "PROGRAM:program"
 Info (12128): Elaborating entity "altsyncram" for hierarchy "PROGRAM:program|altsyncram:altsyncram_component" File: D:/intelFPGA/Projects/EV22G5/PROGRAM.v Line: 82
@@ -1418,55 +1417,54 @@ Info (10041): Inferred latch for "Q[15]" at elatch.v(6) File: D:/intelFPGA/Proje
 Info (12128): Elaborating entity "mux_k" for hierarchy "mux_k:muxK"
 Info (12128): Elaborating entity "RB" for hierarchy "RB:inst8"
 Warning (10855): Verilog HDL warning at RB.v(44): initial value for variable Register should be constant File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 44
-Warning (10235): Verilog HDL Always Construct warning at RB.v(62): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 62
-Warning (10235): Verilog HDL Always Construct warning at RB.v(63): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 63
-Warning (10235): Verilog HDL Always Construct warning at RB.v(65): variable "dataC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 65
-Warning (10235): Verilog HDL Always Construct warning at RB.v(65): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 65
-Warning (10235): Verilog HDL Always Construct warning at RB.v(67): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 67
-Warning (10235): Verilog HDL Always Construct warning at RB.v(69): variable "dataC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 69
+Warning (10235): Verilog HDL Always Construct warning at RB.v(64): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 64
+Warning (10235): Verilog HDL Always Construct warning at RB.v(66): variable "dataC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 66
+Warning (10235): Verilog HDL Always Construct warning at RB.v(66): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 66
 Warning (10235): Verilog HDL Always Construct warning at RB.v(69): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 69
+Warning (10235): Verilog HDL Always Construct warning at RB.v(71): variable "busC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 71
+Warning (10235): Verilog HDL Always Construct warning at RB.v(71): variable "dataC" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 71
+Warning (10235): Verilog HDL Always Construct warning at RB.v(80): variable "busB" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 80
+Warning (10235): Verilog HDL Always Construct warning at RB.v(81): variable "busA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
+Warning (10027): Verilog HDL or VHDL warning at the RB.v(81): index expression is not wide enough to address all of the elements in the array File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
 Warning (10240): Verilog HDL Always Construct warning at RB.v(53): inferring latch(es) for variable "WRcurrent", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Warning (10240): Verilog HDL Always Construct warning at RB.v(53): inferring latch(es) for variable "AUXreg", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Warning (10240): Verilog HDL Always Construct warning at RB.v(53): inferring latch(es) for variable "PO0", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Warning (10240): Verilog HDL Always Construct warning at RB.v(53): inferring latch(es) for variable "PO1", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
-Warning (10235): Verilog HDL Always Construct warning at RB.v(84): variable "busB" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 84
-Warning (10235): Verilog HDL Always Construct warning at RB.v(85): variable "busA" is read inside the Always Construct but isn't in the Always Construct's Event Control File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 85
-Warning (10027): Verilog HDL or VHDL warning at the RB.v(85): index expression is not wide enough to address all of the elements in the array File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 85
-Warning (10240): Verilog HDL Always Construct warning at RB.v(81): inferring latch(es) for variable "B", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Warning (10240): Verilog HDL Always Construct warning at RB.v(81): inferring latch(es) for variable "A", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
+Warning (10240): Verilog HDL Always Construct warning at RB.v(53): inferring latch(es) for variable "B", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Warning (10240): Verilog HDL Always Construct warning at RB.v(53): inferring latch(es) for variable "A", which holds its previous value in one or more paths through the always construct File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Warning (10034): Output port "WRdata" at RB.v(29) has no driver File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 29
-Info (10041): Inferred latch for "A[0]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[1]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[2]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[3]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[4]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[5]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[6]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[7]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[8]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[9]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[10]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[11]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[12]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[13]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[14]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "A[15]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[0]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[1]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[2]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[3]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[4]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[5]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[6]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[7]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[8]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[9]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[10]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[11]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[12]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[13]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[14]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
-Info (10041): Inferred latch for "B[15]" at RB.v(81) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 81
+Info (10041): Inferred latch for "A[0]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[1]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[2]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[3]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[4]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[5]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[6]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[7]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[8]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[9]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[10]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[11]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[12]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[13]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[14]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "A[15]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[0]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[1]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[2]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[3]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[4]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[5]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[6]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[7]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[8]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[9]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[10]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[11]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[12]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[13]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[14]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
+Info (10041): Inferred latch for "B[15]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Info (10041): Inferred latch for "PO1[0]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Info (10041): Inferred latch for "PO1[1]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Info (10041): Inferred latch for "PO1[2]" at RB.v(53) File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
@@ -2181,11 +2179,11 @@ Warning (14284): Synthesized away the following node(s):
         Warning (14320): Synthesized away node "DATA:inst3|altsyncram:altsyncram_component|altsyncram_2jf1:auto_generated|q_a[14]" File: D:/intelFPGA/Projects/EV22G5/db/altsyncram_2jf1.tdf Line: 359
         Warning (14320): Synthesized away node "DATA:inst3|altsyncram:altsyncram_component|altsyncram_2jf1:auto_generated|q_a[15]" File: D:/intelFPGA/Projects/EV22G5/db/altsyncram_2jf1.tdf Line: 382
 Info (276014): Found 5 instances of uninferred RAM logic
-    Info (276004): RAM logic "MIR:inst5|ROM0" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
-    Info (276004): RAM logic "MIR:inst5|ROM1" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
-    Info (276004): RAM logic "MIR:inst5|ROM2" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
-    Info (276004): RAM logic "MIR:inst5|ROM3" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 12
-    Info (276004): RAM logic "MIR:inst5|ROM4" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 13
+    Info (276004): RAM logic "MIR:inst1|ROM0" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 7
+    Info (276004): RAM logic "MIR:inst1|ROM1" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 8
+    Info (276004): RAM logic "MIR:inst1|ROM2" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 9
+    Info (276004): RAM logic "MIR:inst1|ROM3" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 10
+    Info (276004): RAM logic "MIR:inst1|ROM4" is uninferred due to inappropriate RAM size File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 11
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/intelFPGA/Projects/EV22G5/db/EV22G5.ram0_MIR_6c8de232.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/intelFPGA/Projects/EV22G5/db/EV22G5.ram1_MIR_6c8de232.hdl.mif" contains "don't care" values -- overwriting them with 0s
 Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "D:/intelFPGA/Projects/EV22G5/db/EV22G5.ram2_MIR_6c8de232.hdl.mif" contains "don't care" values -- overwriting them with 0s
@@ -2208,14 +2206,14 @@ Warning (14025): LATCH primitive "RB:inst8|Register[35][2]" is permanently disab
 Warning (14025): LATCH primitive "RB:inst8|Register[35][1]" is permanently disabled File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Warning (14025): LATCH primitive "RB:inst8|Register[35][0]" is permanently disabled File: D:/intelFPGA/Projects/EV22G5/modules/RB.v Line: 53
 Info (19000): Inferred 1 megafunctions from design logic
-    Info (276034): Inferred altshift_taps megafunction from the following design logic: "MIR:inst5|MIR_rtl_0"
+    Info (276034): Inferred altshift_taps megafunction from the following design logic: "MIR:inst1|MIR_rtl_0"
         Info (286033): Parameter NUMBER_OF_TAPS set to 1
         Info (286033): Parameter TAP_DISTANCE set to 4
         Info (286033): Parameter WIDTH set to 8
 Info (278001): Inferred 1 megafunctions from design logic
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "alu:alu|Mod0" File: D:/intelFPGA/Projects/EV22G5/modules/alu.v Line: 43
-Info (12130): Elaborated megafunction instantiation "MIR:inst5|altshift_taps:MIR_rtl_0"
-Info (12133): Instantiated megafunction "MIR:inst5|altshift_taps:MIR_rtl_0" with the following parameter:
+Info (12130): Elaborated megafunction instantiation "MIR:inst1|altshift_taps:MIR_rtl_0"
+Info (12133): Instantiated megafunction "MIR:inst1|altshift_taps:MIR_rtl_0" with the following parameter:
     Info (12134): Parameter "NUMBER_OF_TAPS" = "1"
     Info (12134): Parameter "TAP_DISTANCE" = "4"
     Info (12134): Parameter "WIDTH" = "8"
@@ -2251,17 +2249,19 @@ Info (144001): Generated suppressed messages file D:/intelFPGA/Projects/EV22G5/o
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
 Warning (15899): PLL "PLL:pll|altpll:altpll_component|PLL_altpll:auto_generated|pll1" has parameters clk1_multiply_by and clk1_divide_by specified but port CLK[1] is not connected File: D:/intelFPGA/Projects/EV22G5/db/pll_altpll.v Line: 51
-Info (21057): Implemented 1826 device resources after synthesis - the final resource count might be different
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk1"
+Info (21057): Implemented 1828 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 3 input pins
     Info (21059): Implemented 130 output pins
-    Info (21061): Implemented 1660 logic cells
+    Info (21061): Implemented 1662 logic cells
     Info (21064): Implemented 32 RAM segments
     Info (21065): Implemented 1 PLLs
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 124 warnings
-    Info: Peak virtual memory: 4759 megabytes
-    Info: Processing ended: Thu Jun 30 15:56:06 2022
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Peak virtual memory: 4751 megabytes
+    Info: Processing ended: Thu Jun 30 17:18:17 2022
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:17
 
 
 +------------------------------------------+

@@ -166,9 +166,9 @@ https://fpgasoftware.intel.com/eula.
 	)
 	(parameter
 		"WR"
-		"34"
+		"100010"
 		""
-		(type "PARAMETER_SIGNED_DEC")	)
+		(type "PARAMETER_UNSIGNED_BIN")	)
 	(drawing
 		(rectangle (rect 16 16 216 256)(line_width 1))
 	)

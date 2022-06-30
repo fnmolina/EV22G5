@@ -4,7 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "regRead",
+					"name" : "WRwriteout",
 					"strict" : false
 				},
 				{
@@ -104,15 +104,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "WRread",
-					"strict" : false
-				},
-				{
-					"name" : "WRwriteout",
-					"strict" : false
-				},
-				{
 					"name" : "regwrite",
+					"strict" : false
+				},
+				{
+					"name" : "regRead",
+					"strict" : false
+				},
+				{
+					"name" : "WRread",
 					"strict" : false
 				},
 				{
@@ -509,10 +509,6 @@
 				},
 				{
 					"name" : "clk0",
-					"strict" : false
-				},
-				{
-					"name" : "clk1",
 					"strict" : false
 				}
 			]
