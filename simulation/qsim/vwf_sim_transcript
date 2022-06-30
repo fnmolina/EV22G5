@@ -1,17 +1,17 @@
 Determining the location of the ModelSim executable...
 
-Using: C:\intelFPGA_lite\20.1\modelsim_ase\win32aloem
+Using: d:/intelfpga/20.1/modelsim_ase/win32aloem/
 
 To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
 Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
 
 **** Generating the ModelSim Testbench ****
 
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source="C:/intelFPGA_lite/Projects/EV22G5/Waveform.vwf" --testbench_file="C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt"
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source="D:/intelFPGA/Projects/EV22G5/Waveform.vwf" --testbench_file="D:/intelFPGA/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt"
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -26,11 +26,11 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jun 30 03:45:51 2022
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source=C:/intelFPGA_lite/Projects/EV22G5/Waveform.vwf --testbench_file=C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt
+    Info: Processing started: Thu Jun 30 15:57:17 2022
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off EV22G5 -c EV22G5 --vector_source=D:/intelFPGA/Projects/EV22G5/Waveform.vwf --testbench_file=D:/intelFPGA/Projects/EV22G5/simulation/qsim/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 
- (201005): Ignoring output pin "PO0[9]" in vector source file when writing test bench files
+e file when writing test bench files
 
 Completed successfully. 
 
@@ -38,11 +38,11 @@ Completed successfully.
 
 **** Generating the functional simulation netlist ****
 
-quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/" EV22G5 -c EV22G5
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="D:/intelFPGA/Projects/EV22G5/simulation/qsim/" EV22G5 -c EV22G5
 
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
     Info: Copyright (C) 2020  Intel Corporation. All rights reserved.
     Info: Your use of Intel Corporation's design tools, logic functions 
     Info: and other software and tools, and any partner logic 
@@ -57,13 +57,13 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Thu Jun 30 03:45:53 2022
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/ EV22G5 -c EV22G5
+    Info: Processing started: Thu Jun 30 15:57:19 2022
+Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=D:/intelFPGA/Projects/EV22G5/simulation/qsim/ EV22G5 -c EV22G5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file EV22G5.vo in folder "C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim//" for EDA simulation tool
+Info (204019): Generated file EV22G5.vo in folder "D:/intelFPGA/Projects/EV22G5/simulation/qsim//" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4646 megabytes
-    Info: Processing ended: Thu Jun 30 03:45:54 2022
+    Info: Peak virtual memory: 4647 megabytes
+    Info: Processing ended: Thu Jun 30 15:57:20 2022
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
@@ -71,15 +71,19 @@ Completed successfully.
 
 **** Generating the ModelSim .do script ****
 
-C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/EV22G5.do generated.
+D:/intelFPGA/Projects/EV22G5/simulation/qsim/EV22G5.do generated.
 
 Completed successfully. 
 
 **** Running the ModelSim simulation ****
 
-C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vsim -c -do EV22G5.do
+d:/intelfpga/20.1/modelsim_ase/win32aloem//vsim -c -do EV22G5.do
 
 Reading pref.tcl
+# ** Warning: (vish-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/VSOUTtxbvqz' failed.
+# Permission denied. (errno = EACCES)
+# ** Warning: (vsim-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.dy5imh' failed.
+# Permission denied. (errno = EACCES)
 
 # 2020.1
 
@@ -89,30 +93,36 @@ Reading pref.tcl
 # ** Warning: (vlib-34) Library already exists at "work".
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 03:45:58 on Jun 30,2022
+# Start time: 15:57:22 on Jun 30,2022
 # vlog -work work EV22G5.vo 
+# ** Warning: (vlog-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.k3mwfe' failed.
+# Permission denied. (errno = EACCES)
 
 # -- Compiling module EV22G5
 
 # 
 # Top level modules:
 # 	EV22G5
-# End time: 03:45:58 on Jun 30,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 15:57:22 on Jun 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 03:45:58 on Jun 30,2022
+# Start time: 15:57:22 on Jun 30,2022
 # vlog -work work Waveform.vwf.vt 
+# ** Warning: (vlog-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.sxr03k' failed.
+# Permission denied. (errno = EACCES)
 
 # -- Compiling module EV22G5_vlg_vec_tst
 # 
 # Top level modules:
 # 	EV22G5_vlg_vec_tst
-# End time: 03:45:58 on Jun 30,2022, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# End time: 15:57:22 on Jun 30,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
 
 # vsim -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.EV22G5_vlg_vec_tst 
-# Start time: 03:45:59 on Jun 30,2022
+# Start time: 15:57:23 on Jun 30,2022
+# ** Warning: (vsim-3) System call 'mkstemp C:/Users/FACUMO~1/AppData/Local/Temp/questatmp.9hhymm' failed.
+# Permission denied. (errno = EACCES)
 # Loading work.EV22G5_vlg_vec_tst
 # Loading work.EV22G5
 # Loading cycloneive_ver.cycloneive_io_obuf
@@ -130,24 +140,91 @@ Reading pref.tcl
 # Loading cycloneive_ver.cycloneive_ram_register
 # Loading cycloneive_ver.cycloneive_ram_pulse_generator
 # Loading altera_ver.PRIM_GDFF_LOW
-# after#25
 
-# ** Note: $finish    : Waveform.vwf.vt(63)
+# after#30
+
+# ** Note: $finish    : Waveform.vwf.vt(77)
 #    Time: 50 us  Iteration: 0  Instance: /EV22G5_vlg_vec_tst
-# End time: 03:46:00 on Jun 30,2022, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# End time: 15:57:24 on Jun 30,2022, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
 
 Completed successfully. 
 
 **** Converting ModelSim VCD to vector waveform ****
 
-Reading C:/intelFPGA_lite/Projects/EV22G5/Waveform.vwf...
+Reading D:/intelFPGA/Projects/EV22G5/Waveform.vwf...
 
-Reading C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/EV22G5.msim.vcd...
+Reading D:/intelFPGA/Projects/EV22G5/simulation/qsim/EV22G5.msim.vcd...
 
 Processing channel transitions... 
 
-Writing the resulting VWF to C:/intelFPGA_lite/Projects/EV22G5/simulation/qsim/EV22G5_20220630034600.sim.vwf
+Warning: MIR_output[32] - signal not found in VCD.
+
+Warning: MIR_output[31] - signal not found in VCD.
+
+Warning: MIR_output[30] - signal not found in VCD.
+
+Warning: MIR_output[29] - signal not found in VCD.
+
+Warning: MIR_output[28] - signal not found in VCD.
+
+Warning: MIR_output[27] - signal not found in VCD.
+
+Warning: MIR_output[26] - signal not found in VCD.
+
+Warning: MIR_output[25] - signal not found in VCD.
+
+Warning: MIR_output[24] - signal not found in VCD.
+
+Warning: MIR_output[23] - signal not found in VCD.
+
+Warning: MIR_output[22] - signal not found in VCD.
+
+Warning: MIR_output[21] - signal not found in VCD.
+
+Warning: MIR_output[20] - signal not found in VCD.
+
+Warning: MIR_output[19] - signal not found in VCD.
+
+Warning: MIR_output[18] - signal not found in VCD.
+
+Warning: MIR_output[17] - signal not found in VCD.
+
+Warning: MIR_output[16] - signal not found in VCD.
+
+Warning: MIR_output[15] - signal not found in VCD.
+
+Warning: MIR_output[14] - signal not found in VCD.
+
+Warning: MIR_output[13] - signal not found in VCD.
+
+Warning: MIR_output[12] - signal not found in VCD.
+
+Warning: MIR_output[11] - signal not found in VCD.
+
+Warning: MIR_output[10] - signal not found in VCD.
+
+Warning: MIR_output[9] - signal not found in VCD.
+
+Warning: MIR_output[8] - signal not found in VCD.
+
+Warning: MIR_output[7] - signal not found in VCD.
+
+Warning: MIR_output[6] - signal not found in VCD.
+
+Warning: MIR_output[5] - signal not found in VCD.
+
+Warning: MIR_output[4] - signal not found in VCD.
+
+Warning: MIR_output[3] - signal not found in VCD.
+
+Warning: MIR_output[2] - signal not found in VCD.
+
+Warning: MIR_output[1] - signal not found in VCD.
+
+Warning: MIR_output[0] - signal not found in VCD.
+
+Writing the resulting VWF to D:/intelFPGA/Projects/EV22G5/simulation/qsim/EV22G5_20220630155724.sim.vwf
 
 Finished VCD to VWF conversion.
 

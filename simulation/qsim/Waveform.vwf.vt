@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/30/2022 03:45:52"
+// Generated on "06/30/2022 15:57:18"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          EV22G5
 // 
@@ -34,29 +34,43 @@ reg clk0;
 reg clk1;
 reg clk_input;
 // wires                                               
-wire [15:0] Blatch;
+wire [15:0] AlatchOut;
+wire [3:0] AluIn;
+wire [15:0] BlatchOut;
+wire [4:0] busAout;
+wire [5:0] busBout;
 wire [5:0] busC;
 wire clk;
 wire [23:0] instruction;
-wire [32:0] MIR_output;
 wire [15:0] PO0;
+wire regRead;
+wire regwrite;
 wire [15:0] SalidaALU;
-wire [15:0] WRCurrent;
+wire [15:0] WRcurrent;
+wire WRread;
+wire WRwriteout;
 
 // assign statements (if any)                          
 EV22G5 i1 (
 // port map - connection between master ports and signals/registers   
-	.Blatch(Blatch),
+	.AlatchOut(AlatchOut),
+	.AluIn(AluIn),
+	.BlatchOut(BlatchOut),
+	.busAout(busAout),
+	.busBout(busBout),
 	.busC(busC),
 	.clk(clk),
 	.clk0(clk0),
 	.clk1(clk1),
 	.clk_input(clk_input),
 	.instruction(instruction),
-	.MIR_output(MIR_output),
 	.PO0(PO0),
+	.regRead(regRead),
+	.regwrite(regwrite),
 	.SalidaALU(SalidaALU),
-	.WRCurrent(WRCurrent)
+	.WRcurrent(WRcurrent),
+	.WRread(WRread),
+	.WRwriteout(WRwriteout)
 );
 initial 
 begin 

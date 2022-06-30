@@ -38,7 +38,7 @@ module RB
 	reg [15:0] Register [0:35];
 	
 	//working register index 
-	parameter WR = 34;
+	parameter WR = 6'b100010;
 	
 	initial
 		begin
@@ -50,36 +50,38 @@ module RB
 		end 
 
 
-
-	//Block 2
 	always @ (regWrite or workRegWrite) 
 		begin 
-			if(busC!= 6'b100011) begin
 //			if(MC[0])		//memory write 
 //				WRdata <= Register[WR];
 //			else if(MC[1])		//memory read
 //				Register[WR] <= Mdata;
 //			else
-//			if (regWrite or workRegWrite) begin					
-			Register[busC] <= dataC;
+//			if (regWrite or workRegWrite) begin	
 //			end
-			end
-			
-			WRcurrent <= Register[WR];
-			AUXreg <= Register[35];
-			PO0 <= Register[30];
-			PO1 <= Register[31];
-			
+			if(busC!= 6'b100011) begin
+				if(workRegWrite && busC == WR)
+					begin
+						Register[busC] <= dataC;
+					end
+				else if(regWrite && busC != WR)
+					begin
+						Register[busC] <= dataC;
+					end 
+				WRcurrent <= Register[WR];
+				AUXreg <= Register[35];
+				PO0 <= Register[30];
+				PO1 <= Register[31];
+			end	
 		end
 
 	//Block 3
 	//Esto no me parece del todo bien. Si A o B no cambian podria no guardar un dato actualizado por C en el clk anterior?
-	always @ (busA or busB) 
+	//always @ (busA or busB) 
+	always @ (regRead or workRegRead) 
 		begin 
 			if (regRead || workRegRead) begin					
-
 				B <= Register[busB];
-	
 				A <= Register[busA];
 			end	
 			

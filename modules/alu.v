@@ -1,6 +1,7 @@
 module alu (
     input [3:0] operation,
     input [15:0] reg_a, reg_b,
+	 input wire clk,
     output reg signed [15:0] c_out,
     //output reg signed [31:0] c_mul_out,
     output reg [3:0] CCR);
@@ -19,8 +20,10 @@ module alu (
                 op_mod  = 4'b1010,
                 clr_c   = 4'b1011,
                 set_c   = 4'b1100;
+					 
 
-always @(reg_a, reg_b, operation) begin
+//always @(reg_a, reg_b, operation) begin
+always @(posedge clk) begin
     CCR = 0;
     case (operation)
         nop_a:  c_out <= reg_a;

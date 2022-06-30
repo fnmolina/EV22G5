@@ -1,3 +1,3 @@
-Warning (10268): Verilog HDL information at alu.v(23): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/Projects/EV22G5/modules/alu.v Line: 23
-Warning (10268): Verilog HDL information at MIR.v(90): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/Projects/EV22G5/modules/MIR.v Line: 90
-Warning (10268): Verilog HDL information at pc.v(19): always construct contains both blocking and non-blocking assignments File: C:/intelFPGA_lite/Projects/EV22G5/modules/pc.v Line: 19
+Warning (10268): Verilog HDL information at alu.v(26): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA/Projects/EV22G5/modules/alu.v Line: 26
+Warning (10268): Verilog HDL information at MIR.v(90): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA/Projects/EV22G5/modules/MIR.v Line: 90
+Warning (10268): Verilog HDL information at pc.v(19): always construct contains both blocking and non-blocking assignments File: D:/intelFPGA/Projects/EV22G5/modules/pc.v Line: 19

@@ -1,16 +1,16 @@
-Fitter Status : Successful - Thu Jun 30 03:44:52 2022
-Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Fitter Status : Successful - Thu Jun 30 15:56:38 2022
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : EV22G5
 Top-level Entity Name : EV22G5
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 1,580 / 22,320 ( 7 % )
-    Total combinational functions : 1,540 / 22,320 ( 7 % )
-    Dedicated logic registers : 161 / 22,320 ( < 1 % )
-Total registers : 161
-Total pins : 131 / 154 ( 85 % )
+Total logic elements : 1,584 / 22,320 ( 7 % )
+    Total combinational functions : 1,558 / 22,320 ( 7 % )
+    Dedicated logic registers : 148 / 22,320 ( < 1 % )
+Total registers : 148
+Total pins : 133 / 154 ( 86 % )
 Total virtual pins : 0
-Total memory bits : 98,304 / 608,256 ( 16 % )
+Total memory bits : 98,320 / 608,256 ( 16 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
 Total PLLs : 1 / 4 ( 25 % )

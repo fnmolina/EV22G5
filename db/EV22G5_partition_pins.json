@@ -4,67 +4,7 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "Blatch[15]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[14]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[13]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[12]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[11]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[10]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[9]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[8]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[7]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[6]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[5]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[4]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[3]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[2]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[1]",
-					"strict" : false
-				},
-				{
-					"name" : "Blatch[0]",
+					"name" : "regRead",
 					"strict" : false
 				},
 				{
@@ -164,6 +104,194 @@
 					"strict" : false
 				},
 				{
+					"name" : "WRread",
+					"strict" : false
+				},
+				{
+					"name" : "WRwriteout",
+					"strict" : false
+				},
+				{
+					"name" : "regwrite",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[15]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[14]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[13]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[12]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AlatchOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "AluIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "AluIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "AluIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "AluIn[0]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[15]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[14]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[13]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[12]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[11]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[10]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[9]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[8]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[7]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[6]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[5]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[4]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[3]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[1]",
+					"strict" : false
+				},
+				{
+					"name" : "BlatchOut[0]",
+					"strict" : false
+				},
+				{
+					"name" : "busAout[4]",
+					"strict" : false
+				},
+				{
+					"name" : "busAout[3]",
+					"strict" : false
+				},
+				{
+					"name" : "busAout[2]",
+					"strict" : false
+				},
+				{
+					"name" : "busAout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "busAout[0]",
+					"strict" : false
+				},
+				{
+					"name" : "busBout[5]",
+					"strict" : false
+				},
+				{
+					"name" : "busBout[1]",
+					"strict" : false
+				},
+				{
+					"name" : "busBout[0]",
+					"strict" : false
+				},
+				{
 					"name" : "busC[5]",
 					"strict" : false
 				},
@@ -185,118 +313,6 @@
 				},
 				{
 					"name" : "busC[0]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[32]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[31]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[30]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[29]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[26]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[25]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[24]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[23]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[19]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[18]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[17]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[16]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[15]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[14]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[13]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[12]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[11]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[10]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[9]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[8]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[7]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[6]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[5]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[4]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[3]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[2]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[1]",
-					"strict" : false
-				},
-				{
-					"name" : "MIR_output[0]",
 					"strict" : false
 				},
 				{
@@ -428,67 +444,67 @@
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[15]",
+					"name" : "WRcurrent[15]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[14]",
+					"name" : "WRcurrent[14]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[13]",
+					"name" : "WRcurrent[13]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[12]",
+					"name" : "WRcurrent[12]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[11]",
+					"name" : "WRcurrent[11]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[10]",
+					"name" : "WRcurrent[10]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[9]",
+					"name" : "WRcurrent[9]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[8]",
+					"name" : "WRcurrent[8]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[7]",
+					"name" : "WRcurrent[7]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[6]",
+					"name" : "WRcurrent[6]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[5]",
+					"name" : "WRcurrent[5]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[4]",
+					"name" : "WRcurrent[4]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[3]",
+					"name" : "WRcurrent[3]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[2]",
+					"name" : "WRcurrent[2]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[1]",
+					"name" : "WRcurrent[1]",
 					"strict" : false
 				},
 				{
-					"name" : "WRCurrent[0]",
+					"name" : "WRcurrent[0]",
 					"strict" : false
 				},
 				{
